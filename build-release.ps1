@@ -14,14 +14,14 @@ Write-Host "Working directory: $currentDir" -ForegroundColor Gray
 if ($Clean) {
     Write-Host "Cleaning previous builds..." -ForegroundColor Yellow
     dotnet clean --configuration Release
-    Remove-Item -Path "$currentDir\ChessEngine\bin\Release" -Recurse -Force -ErrorAction SilentlyContinue
-    Remove-Item -Path "$currentDir\ChessEngine\obj\Release" -Recurse -Force -ErrorAction SilentlyContinue
+    Remove-Item -Path "ChessEngine\bin\Release" -Recurse -Force -ErrorAction SilentlyContinue
+    Remove-Item -Path "ChessEngine\obj\Release" -Recurse -Force -ErrorAction SilentlyContinue
 }
 
 # Build and publish with Native AOT
 Write-Host "Publishing with Native AOT compilation..." -ForegroundColor Yellow
-$projectPath = Join-Path $currentDir "ChessEngine\ChessEngine.csproj"
-$publishPath = Join-Path $currentDir "ChessEngine\bin\Release\net9.0\$Runtime\publish"
+$projectPath = ".\ChessEngine\ChessEngine.csproj"
+$publishPath = "ChessEngine\bin\Release\net9.0\$Runtime\publish"
 
 Write-Host "Project path: $projectPath" -ForegroundColor Gray
 
@@ -36,7 +36,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "Executable location: $publishPath\ChessEngine.exe" -ForegroundColor Cyan
     
     # Show file size
-    $exePath = Join-Path $publishPath "ChessEngine.exe"
+    $exePath = "$publishPath\ChessEngine.exe"
     if (Test-Path $exePath) {
         $fileSize = (Get-Item $exePath).Length / 1MB
         Write-Host "Executable size: $([math]::Round($fileSize, 2)) MB" -ForegroundColor Cyan

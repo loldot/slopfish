@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace ChessEngine
 {
     public struct SearchResult
@@ -49,6 +51,7 @@ namespace ChessEngine
             {
                 if (shouldStop) break;
 
+                // Always maximize from the current player's perspective
                 int score = AlphaBeta(depth, -Infinity, Infinity, true, out Move currentBestMove);
                 
                 if (!shouldStop)
@@ -101,60 +104,34 @@ namespace ChessEngine
 
             OrderMoves(moves);
 
-            if (maximizingPlayer)
+            // Since evaluation is from side-to-move perspective, we always want to maximize
+            // But we need to negate the score when going deeper since we switch sides
+            int maxEval = -Infinity;
+            
+            foreach (Move move in moves)
             {
-                int maxEval = -Infinity;
-                
-                foreach (Move move in moves)
+                if (shouldStop) break;
+
+                board.MakeMove(move);
+                // Negate the score since we're switching sides and the evaluation 
+                // will be from the opponent's perspective
+                int eval = -AlphaBeta(depth - 1, -beta, -alpha, true, out _);
+                board.UnmakeMove(move);
+
+                if (eval > maxEval)
                 {
-                    if (shouldStop) break;
-
-                    board.MakeMove(move);
-                    int eval = AlphaBeta(depth - 1, alpha, beta, false, out _);
-                    board.UnmakeMove(move);
-
-                    if (eval > maxEval)
-                    {
-                        maxEval = eval;
-                        bestMove = move;
-                    }
-
-                    alpha = Math.Max(alpha, eval);
-                    if (beta <= alpha)
-                    {
-                        break;
-                    }
+                    maxEval = eval;
+                    bestMove = move;
                 }
-                
-                return maxEval;
-            }
-            else
-            {
-                int minEval = Infinity;
-                
-                foreach (Move move in moves)
+
+                alpha = Math.Max(alpha, eval);
+                if (beta <= alpha)
                 {
-                    if (shouldStop) break;
-
-                    board.MakeMove(move);
-                    int eval = AlphaBeta(depth - 1, alpha, beta, true, out _);
-                    board.UnmakeMove(move);
-
-                    if (eval < minEval)
-                    {
-                        minEval = eval;
-                        bestMove = move;
-                    }
-
-                    beta = Math.Min(beta, eval);
-                    if (beta <= alpha)
-                    {
-                        break;
-                    }
+                    break;
                 }
-                
-                return minEval;
             }
+            
+            return maxEval;
         }
 
         private int Quiescence(int alpha, int beta, bool maximizingPlayer)
@@ -163,20 +140,10 @@ namespace ChessEngine
 
             int standPat = Evaluator.Evaluate(board);
 
-            if (maximizingPlayer)
-            {
-                if (standPat >= beta)
-                    return beta;
-                
-                alpha = Math.Max(alpha, standPat);
-            }
-            else
-            {
-                if (standPat <= alpha)
-                    return alpha;
-                
-                beta = Math.Min(beta, standPat);
-            }
+            if (standPat >= beta)
+                return beta;
+            
+            alpha = Math.Max(alpha, standPat);
 
             List<Move> captureMoves = GetCaptureMoves();
             OrderMoves(captureMoves);
@@ -186,24 +153,16 @@ namespace ChessEngine
                 if (shouldStop) break;
 
                 board.MakeMove(move);
-                int score = Quiescence(alpha, beta, !maximizingPlayer);
+                // Use negamax approach - negate score since we switch sides
+                int score = -Quiescence(-beta, -alpha, true);
                 board.UnmakeMove(move);
 
-                if (maximizingPlayer)
-                {
-                    alpha = Math.Max(alpha, score);
-                    if (beta <= alpha)
-                        break;
-                }
-                else
-                {
-                    beta = Math.Min(beta, score);
-                    if (beta <= alpha)
-                        break;
-                }
+                alpha = Math.Max(alpha, score);
+                if (beta <= alpha)
+                    break;
             }
 
-            return maximizingPlayer ? alpha : beta;
+            return alpha;
         }
 
         private List<Move> GetCaptureMoves()
@@ -224,18 +183,38 @@ namespace ChessEngine
 
         private void OrderMoves(List<Move> moves)
         {
-            moves.Sort((move1, move2) =>
+            // Use stable sorting with move indices to ensure deterministic ordering
+            var movesWithIndex = moves.Select((move, index) => new { Move = move, Index = index }).ToList();
+            
+            movesWithIndex.Sort((item1, item2) =>
             {
-                int score1 = GetMoveOrderingScore(move1);
-                int score2 = GetMoveOrderingScore(move2);
-                return score2.CompareTo(score1);
+                int score1 = GetMoveOrderingScore(item1.Move);
+                int score2 = GetMoveOrderingScore(item2.Move);
+                
+                // Primary sort by score (descending)
+                int comparison = score2.CompareTo(score1);
+                
+                // Secondary sort by original index for stability (ascending)
+                if (comparison == 0)
+                {
+                    comparison = item1.Index.CompareTo(item2.Index);
+                }
+                
+                return comparison;
             });
+            
+            // Update the original list with sorted moves
+            for (int i = 0; i < moves.Count; i++)
+            {
+                moves[i] = movesWithIndex[i].Move;
+            }
         }
 
         private int GetMoveOrderingScore(Move move)
         {
             int score = 0;
 
+            // Prioritize captures using MVV-LVA (Most Valuable Victim - Least Valuable Attacker)
             if (move.IsCapture)
             {
                 int capturedValue = GetSimplePieceValue(move.CapturedPiece);
@@ -243,19 +222,25 @@ namespace ChessEngine
                 score += 1000 + capturedValue - attackerValue;
             }
 
+            // Prioritize promotions
             if (move.IsPromotion)
             {
                 score += 900;
             }
 
-            if (board.IsInCheck(board.SideToMove == Color.White ? Color.Black : Color.White))
+            // Prioritize castling
+            if (move.IsCastling)
             {
-                board.MakeMove(move);
-                if (board.IsInCheck(board.SideToMove))
-                {
-                    score += 500;
-                }
-                board.UnmakeMove(move);
+                score += 50;
+            }
+            
+            // Add small bonus for center moves to encourage development
+            int toFile = Board.GetFile(move.To);
+            int toRank = Board.GetRank(move.To);
+            if ((toFile == Board.FileD || toFile == Board.FileE) && 
+                (toRank == Board.Rank4 || toRank == Board.Rank5))
+            {
+                score += 10;
             }
 
             return score;
