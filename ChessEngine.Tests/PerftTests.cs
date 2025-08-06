@@ -1,5 +1,4 @@
 using ChessEngine;
-using System.Diagnostics;
 
 namespace ChessEngine.Tests;
 
@@ -41,8 +40,6 @@ public class PerftTests
             long nodes = Perft(board, depth - 1);
             totalNodes += nodes;
             board.UnmakeMove(move);
-            
-            Debug.WriteLine($"{move.From}{move.To}: {nodes}");
         }
 
         return totalNodes;

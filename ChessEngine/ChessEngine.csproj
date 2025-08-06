@@ -7,4 +7,43 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!-- Enable Native AOT compilation -->
+    <PublishAot>true</PublishAot>
+    
+    <!-- Optimize for current CPU instruction set -->
+    <OptimizationPreference>Speed</OptimizationPreference>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    
+    <!-- Enable CPU-specific optimizations -->
+    <CrossTargeting>false</CrossTargeting>
+    <SelfContained>true</SelfContained>
+    
+    <!-- Additional performance optimizations -->
+    <DebuggerSupport>false</DebuggerSupport>
+    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+    <EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>
+    <HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>
+    <MetadataUpdaterSupport>false</MetadataUpdaterSupport>
+    <UseSystemResourceKeys>true</UseSystemResourceKeys>
+    
+    <!-- Trim unused code -->
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>link</TrimMode>
+    
+    <!-- Optimize for size and speed -->
+    <Optimize>true</Optimize>
+    <WarningLevel>0</WarningLevel>
+    
+    <!-- Chess engine specific optimizations -->
+    <IlcOptimizationPreference>Speed</IlcOptimizationPreference>
+    <IlcInstructionSet>native</IlcInstructionSet>
+    <DefineConstants>RELEASE</DefineConstants>
+    
+    <!-- Memory and performance optimizations -->
+    <EventSourceSupport>false</EventSourceSupport>
+    <StackTraceSupport>false</StackTraceSupport>
+    <UseNativeHttpHandler>true</UseNativeHttpHandler>
+  </PropertyGroup>
+
 </Project>

@@ -12,12 +12,7 @@ public class DebugMoveTests
         
         var moves = board.GenerateLegalMoves();
         
-        foreach (var move in moves.OrderBy(m => m.ToString()))
-        {
-            var piece = Piece.ToChar(move.MovedPiece);
-            Console.WriteLine($"{move} ({piece})");
-        }
-        
+        // Verify we have the expected number of legal moves from starting position
         Assert.Equal(20, moves.Count);
     }
 }

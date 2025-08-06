@@ -222,8 +222,6 @@ namespace ChessEngine
                         if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank1), enemyColor) &&
                             !IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank1), enemyColor))
                         {
-                            // DEBUG: Print castling check info
-                            Console.WriteLine($"White kingside castling: f1 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank1), enemyColor)}, g1 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank1), enemyColor)}");
                             moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileG, Board.Rank1),
                                             Piece.WhiteKing, Piece.None, Piece.None, false, true));
                         }
@@ -243,8 +241,6 @@ namespace ChessEngine
                         if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank1), enemyColor) &&
                             !IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank1), enemyColor))
                         {
-                            // DEBUG: Print castling check info
-                            Console.WriteLine($"White queenside castling: d1 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank1), enemyColor)}, c1 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank1), enemyColor)}");
                             moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileC, Board.Rank1),
                                             Piece.WhiteKing, Piece.None, Piece.None, false, true));
                         }
@@ -265,10 +261,6 @@ namespace ChessEngine
                         if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank8), enemyColor) &&
                             !IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank8), enemyColor))
                         {
-                            // DEBUG: Print castling check info
-                            Console.WriteLine($"Black kingside castling: f8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank8), enemyColor)}, g8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank8), enemyColor)}");
-                            // DEBUG: Print castling check info
-                            Console.WriteLine($"Black kingside castling: f8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank8), enemyColor)}, g8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank8), enemyColor)}");
                             moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileG, Board.Rank8),
                                               Piece.BlackKing, Piece.None, Piece.None, false, true));
                         }
@@ -289,10 +281,6 @@ namespace ChessEngine
                     if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank8), enemyColor) &&
                         !IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank8), enemyColor))
                     {
-                        // DEBUG: Print castling check info
-                        Console.WriteLine($"Black queenside castling: d8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank8), enemyColor)}, c8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank8), enemyColor)}");
-                        // DEBUG: Print castling check info
-                        Console.WriteLine($"Black queenside castling: d8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank8), enemyColor)}, c8 attacked? {IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank8), enemyColor)}");
                         moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileC, Board.Rank8),
                                           Piece.BlackKing, Piece.None, Piece.None, false, true));
                     }
