@@ -12,6 +12,7 @@ namespace ChessEngine
         public int HalfMoveClock { get; set; } = 0;
         public int FullMoveNumber { get; set; } = 1;
         public int EnPassantSquare { get; set; } = -1;
+        public ulong HashKey { get; set; } = 0;
         
         public bool WhiteCanCastleKingside { get; set; } = true;
         public bool WhiteCanCastleQueenside { get; set; } = true;
@@ -126,6 +127,9 @@ namespace ChessEngine
             WhiteCanCastleQueenside = true;
             BlackCanCastleKingside = true;
             BlackCanCastleQueenside = true;
+            
+            // Initialize hash key
+            HashKey = ZobristHashing.ComputeHash(this);
         }
 
         public void PrintBoard()

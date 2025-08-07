@@ -1,5 +1,3 @@
-using System.Linq;
-
 namespace ChessEngine
 {
     public struct SearchResult
@@ -31,10 +29,12 @@ namespace ChessEngine
         private DateTime searchStartTime;
         private TimeSpan maxSearchTime;
         private bool shouldStop;
+        private TranspositionTable transpositionTable;
 
         public SearchEngine(Board board)
         {
             this.board = board;
+            this.transpositionTable = new TranspositionTable(64); // 64MB TT
         }
 
         public SearchResult Search(int maxDepth, TimeSpan maxTime)
@@ -43,6 +43,9 @@ namespace ChessEngine
             searchStartTime = DateTime.UtcNow;
             maxSearchTime = maxTime;
             shouldStop = false;
+            
+            // Start new search in transposition table
+            transpositionTable.NewSearch();
 
             Move bestMove = default;
             int bestScore = -Infinity;
@@ -79,11 +82,22 @@ namespace ChessEngine
         {
             bestMove = default;
             nodesSearched++;
-
+            
+            ulong positionHash = board.HashKey;
+            
             if (DateTime.UtcNow - searchStartTime >= maxSearchTime)
             {
                 shouldStop = true;
                 return 0;
+            }
+
+            // Probe transposition table
+            int ttScore = transpositionTable.ProbeScore(positionHash, depth, alpha, beta, board.SideToMove);
+            if (ttScore != int.MinValue)
+            {
+                // Get the hash move for move ordering even if we can't use the score
+                transpositionTable.ProbeMove(positionHash, out bestMove);
+                return ttScore;
             }
 
             if (depth == 0 || board.IsGameOver())
@@ -102,11 +116,17 @@ namespace ChessEngine
                 return 0;
             }
 
-            OrderMoves(moves);
+            // Get hash move for move ordering
+            Move hashMove = default;
+            transpositionTable.ProbeMove(positionHash, out hashMove);
+            
+            OrderMoves(moves, hashMove);
 
             // Since evaluation is from side-to-move perspective, we always want to maximize
             // But we need to negate the score when going deeper since we switch sides
             int maxEval = -Infinity;
+            Move localBestMove = default;
+            int originalAlpha = alpha;
             
             foreach (Move move in moves)
             {
@@ -121,15 +141,28 @@ namespace ChessEngine
                 if (eval > maxEval)
                 {
                     maxEval = eval;
-                    bestMove = move;
+                    localBestMove = move;
                 }
 
                 alpha = Math.Max(alpha, eval);
                 if (beta <= alpha)
                 {
-                    break;
+                    break; // Beta cutoff
                 }
             }
+            
+            bestMove = localBestMove;
+            
+            // Store in transposition table
+            TTEntryType entryType;
+            if (maxEval <= originalAlpha)
+                entryType = TTEntryType.UpperBound; // All moves failed low
+            else if (maxEval >= beta)
+                entryType = TTEntryType.LowerBound; // Beta cutoff
+            else
+                entryType = TTEntryType.Exact; // Exact score
+            
+            transpositionTable.Store(positionHash, localBestMove, maxEval, depth, entryType, board.SideToMove);
             
             return maxEval;
         }
@@ -181,15 +214,15 @@ namespace ChessEngine
             return captureMoves;
         }
 
-        private void OrderMoves(List<Move> moves)
+        private void OrderMoves(List<Move> moves, Move hashMove = default)
         {
             // Use stable sorting with move indices to ensure deterministic ordering
             var movesWithIndex = moves.Select((move, index) => new { Move = move, Index = index }).ToList();
             
             movesWithIndex.Sort((item1, item2) =>
             {
-                int score1 = GetMoveOrderingScore(item1.Move);
-                int score2 = GetMoveOrderingScore(item2.Move);
+                int score1 = GetMoveOrderingScore(item1.Move, hashMove);
+                int score2 = GetMoveOrderingScore(item2.Move, hashMove);
                 
                 // Primary sort by score (descending)
                 int comparison = score2.CompareTo(score1);
@@ -210,9 +243,15 @@ namespace ChessEngine
             }
         }
 
-        private int GetMoveOrderingScore(Move move)
+        private int GetMoveOrderingScore(Move move, Move hashMove = default)
         {
             int score = 0;
+            
+            // Hash move gets highest priority
+            if (!hashMove.Equals(default) && move.Equals(hashMove))
+            {
+                score += 10000;
+            }
 
             // Prioritize captures using MVV-LVA (Most Valuable Victim - Least Valuable Attacker)
             if (move.IsCapture)

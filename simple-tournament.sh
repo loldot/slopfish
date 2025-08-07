@@ -56,7 +56,9 @@ else
 fi
 
 # Build baseline from previous commit
-echo "Building baseline from HEAD..."
+echo "Building baseline from HEAD^..."
+
+git checkout HEAD^ > /dev/null 2>&1
 
 rm -rf "$BASELINE_DIR"
 mkdir -p "$BASELINE_DIR"

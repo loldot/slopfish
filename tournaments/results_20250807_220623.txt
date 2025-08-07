@@ -1,0 +1,272 @@
+Indexing opening suite...
+Started game 1 of 100 (Baseline vs Candidate)
+Started game 2 of 100 (Candidate vs Baseline)
+Finished game 1 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 3 of 100 (Baseline vs Candidate)
+Finished game 2 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 4 of 100 (Candidate vs Baseline)
+Finished game 3 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 5 of 100 (Baseline vs Candidate)
+Finished game 4 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 6 of 100 (Candidate vs Baseline)
+Finished game 6 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 7 of 100 (Baseline vs Candidate)
+Finished game 5 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 8 of 100 (Candidate vs Baseline)
+Finished game 7 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 9 of 100 (Baseline vs Candidate)
+Finished game 8 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 10 of 100 (Candidate vs Baseline)
+Finished game 10 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 11 of 100 (Baseline vs Candidate)
+Finished game 9 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 12 of 100 (Candidate vs Baseline)
+Finished game 12 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 13 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 11 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 14 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 14 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 15 of 100 (Baseline vs Candidate)
+Finished game 13 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 16 of 100 (Candidate vs Baseline)
+Finished game 15 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 17 of 100 (Baseline vs Candidate)
+Finished game 16 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 18 of 100 (Candidate vs Baseline)
+Finished game 17 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 19 of 100 (Baseline vs Candidate)
+Finished game 18 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 20 of 100 (Candidate vs Baseline)
+Finished game 20 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 21 of 100 (Baseline vs Candidate)
+Finished game 19 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: 34.86 +/- 43.74, nElo: 122.84 +/- 152.27
+LOS: 94.31 %, DrawRatio: 80.00 %, PairsRatio: inf
+Games: 20, Wins: 2, Losses: 0, Draws: 18, Points: 11.0 (55.00 %)
+Ptnml(0-2): [0, 0, 8, 2, 0], WL/DD Ratio: 0.00
+--------------------------------------------------
+Started game 22 of 100 (Candidate vs Baseline)
+Finished game 22 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 23 of 100 (Baseline vs Candidate)
+Finished game 21 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 24 of 100 (Candidate vs Baseline)
+Finished game 23 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 25 of 100 (Baseline vs Candidate)
+Finished game 24 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 26 of 100 (Candidate vs Baseline)
+Finished game 25 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 27 of 100 (Baseline vs Candidate)
+Finished game 26 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 28 of 100 (Candidate vs Baseline)
+Finished game 27 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 29 of 100 (Baseline vs Candidate)
+Finished game 28 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 30 of 100 (Candidate vs Baseline)
+Finished game 29 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 31 of 100 (Baseline vs Candidate)
+Finished game 30 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 32 of 100 (Candidate vs Baseline)
+Finished game 31 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 33 of 100 (Baseline vs Candidate)
+Finished game 32 (Candidate vs Baseline): 1/2-1/2 {Draw by insufficient mating material}
+Started game 34 of 100 (Candidate vs Baseline)
+Finished game 33 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 35 of 100 (Baseline vs Candidate)
+Finished game 34 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 36 of 100 (Candidate vs Baseline)
+Finished game 35 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 37 of 100 (Baseline vs Candidate)
+Finished game 36 (Candidate vs Baseline): 1/2-1/2 {Draw by insufficient mating material}
+Started game 38 of 100 (Candidate vs Baseline)
+Finished game 37 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 39 of 100 (Baseline vs Candidate)
+Finished game 38 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 40 of 100 (Candidate vs Baseline)
+Finished game 40 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 41 of 100 (Baseline vs Candidate)
+Finished game 41 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 42 of 100 (Candidate vs Baseline)
+Finished game 39 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: 34.86 +/- 39.39, nElo: 96.36 +/- 107.67
+LOS: 96.03 %, DrawRatio: 70.00 %, PairsRatio: 5.00
+Games: 40, Wins: 5, Losses: 1, Draws: 34, Points: 22.0 (55.00 %)
+Ptnml(0-2): [0, 1, 14, 5, 0], WL/DD Ratio: 0.00
+--------------------------------------------------
+Started game 43 of 100 (Baseline vs Candidate)
+Finished game 43 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 44 of 100 (Candidate vs Baseline)
+Finished game 42 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 45 of 100 (Baseline vs Candidate)
+Finished game 45 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 46 of 100 (Candidate vs Baseline)
+Finished game 44 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 47 of 100 (Baseline vs Candidate)
+Finished game 46 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 48 of 100 (Candidate vs Baseline)
+Finished game 47 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 49 of 100 (Baseline vs Candidate)
+Finished game 48 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 50 of 100 (Candidate vs Baseline)
+Finished game 50 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 51 of 100 (Baseline vs Candidate)
+Finished game 49 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 52 of 100 (Candidate vs Baseline)
+Finished game 52 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 53 of 100 (Baseline vs Candidate)
+Finished game 51 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 54 of 100 (Candidate vs Baseline)
+Finished game 54 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 55 of 100 (Baseline vs Candidate)
+Finished game 53 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 56 of 100 (Candidate vs Baseline)
+Finished game 55 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 57 of 100 (Baseline vs Candidate)
+Finished game 56 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 58 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 58 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 59 of 100 (Baseline vs Candidate)
+Finished game 57 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 60 of 100 (Candidate vs Baseline)
+Finished game 59 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 61 of 100 (Baseline vs Candidate)
+Finished game 61 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 62 of 100 (Candidate vs Baseline)
+Finished game 60 (Candidate vs Baseline): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: 23.20 +/- 35.20, nElo: 58.31 +/- 87.91
+LOS: 90.32 %, DrawRatio: 66.67 %, PairsRatio: 2.33
+Games: 60, Wins: 7, Losses: 3, Draws: 50, Points: 32.0 (53.33 %)
+Ptnml(0-2): [0, 3, 20, 7, 0], WL/DD Ratio: 0.00
+--------------------------------------------------
+Started game 63 of 100 (Baseline vs Candidate)
+Finished game 62 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 64 of 100 (Candidate vs Baseline)
+Finished game 63 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 65 of 100 (Baseline vs Candidate)
+Finished game 65 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 66 of 100 (Candidate vs Baseline)
+Finished game 64 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 67 of 100 (Baseline vs Candidate)
+Finished game 66 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 68 of 100 (Candidate vs Baseline)
+Finished game 67 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 69 of 100 (Baseline vs Candidate)
+Finished game 68 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 70 of 100 (Candidate vs Baseline)
+Finished game 69 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 71 of 100 (Baseline vs Candidate)
+Finished game 70 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 72 of 100 (Candidate vs Baseline)
+Finished game 71 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 73 of 100 (Baseline vs Candidate)
+Finished game 72 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 74 of 100 (Candidate vs Baseline)
+Finished game 73 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 75 of 100 (Baseline vs Candidate)
+Finished game 74 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 76 of 100 (Candidate vs Baseline)
+Finished game 75 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 77 of 100 (Baseline vs Candidate)
+Finished game 76 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 78 of 100 (Candidate vs Baseline)
+Finished game 77 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 79 of 100 (Baseline vs Candidate)
+Finished game 78 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 80 of 100 (Candidate vs Baseline)
+Finished game 79 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 81 of 100 (Baseline vs Candidate)
+Finished game 81 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 82 of 100 (Candidate vs Baseline)
+Finished game 80 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: 8.69 +/- 29.45, nElo: 22.52 +/- 76.13
+LOS: 71.90 %, DrawRatio: 70.00 %, PairsRatio: 1.40
+Games: 80, Wins: 7, Losses: 5, Draws: 68, Points: 41.0 (51.25 %)
+Ptnml(0-2): [0, 5, 28, 7, 0], WL/DD Ratio: 0.00
+--------------------------------------------------
+Started game 83 of 100 (Baseline vs Candidate)
+Finished game 82 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 84 of 100 (Candidate vs Baseline)
+Finished game 83 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 85 of 100 (Baseline vs Candidate)
+Finished game 84 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 86 of 100 (Candidate vs Baseline)
+Finished game 85 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 87 of 100 (Baseline vs Candidate)
+Finished game 86 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 88 of 100 (Candidate vs Baseline)
+Finished game 88 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 89 of 100 (Baseline vs Candidate)
+Finished game 87 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 90 of 100 (Candidate vs Baseline)
+Finished game 90 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 91 of 100 (Baseline vs Candidate)
+Finished game 89 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 92 of 100 (Candidate vs Baseline)
+Finished game 92 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 93 of 100 (Baseline vs Candidate)
+Finished game 91 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 94 of 100 (Candidate vs Baseline)
+Finished game 94 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 95 of 100 (Baseline vs Candidate)
+Finished game 93 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 96 of 100 (Candidate vs Baseline)
+Finished game 95 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 97 of 100 (Baseline vs Candidate)
+Finished game 96 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 98 of 100 (Candidate vs Baseline)
+Finished game 97 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 99 of 100 (Baseline vs Candidate)
+Finished game 98 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 100 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 99 (Baseline vs Candidate): 0-1 {Black mates}
+Finished game 100 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -0.00 +/- 25.53, nElo: 0.00 +/- 68.10
+LOS: 50.00 %, DrawRatio: 72.00 %, PairsRatio: 1.00
+Games: 100, Wins: 7, Losses: 7, Draws: 86, Points: 50.0 (50.00 %)
+Ptnml(0-2): [0, 7, 36, 7, 0], WL/DD Ratio: 0.00
+--------------------------------------------------
+Finished match
+Total Time: 00:13:15 (hours:minutes:seconds)
+

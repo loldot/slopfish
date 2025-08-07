@@ -22,9 +22,9 @@
         "enabled": false
     },
     "opening": {
-        "file": "",
-        "format": 2,
-        "order": 1,
+        "file": "8moves_v3.pgn",
+        "format": 1,
+        "order": 0,
         "plies": -1,
         "start": 1
     },
@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "tournaments/tournament_20250807_215256.pgn",
+        "file": "tournaments/tournament_20250807_222602.pgn",
         "notation": 0,
         "track_nodes": false,
         "track_seldepth": false,
@@ -57,7 +57,7 @@
     },
     "config_name": "config.json",
     "output": 0,
-    "seed": 10018736823091594410,
+    "seed": 14714535449485878775,
     "variant": 0,
     "type": 0,
     "gauntlet_seeds": 1,
@@ -127,23 +127,23 @@
     "stats": {
         "Candidate vs Baseline": {
             "wins": 0,
-            "losses": 3,
-            "draws": 21,
+            "losses": 1,
+            "draws": 9,
             "penta_WW": 0,
             "penta_WD": 0,
             "penta_WL": 0,
-            "penta_DD": 9,
-            "penta_LD": 3,
+            "penta_DD": 4,
+            "penta_LD": 1,
             "penta_LL": 0
         },
         "Baseline vs Candidate": {
             "wins": 0,
             "losses": 0,
-            "draws": 4,
+            "draws": 2,
             "penta_WW": 0,
             "penta_WD": 0,
             "penta_WL": 0,
-            "penta_DD": 2,
+            "penta_DD": 1,
             "penta_LD": 0,
             "penta_LL": 0
         }

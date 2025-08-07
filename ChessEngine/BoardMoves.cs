@@ -10,6 +10,7 @@ namespace ChessEngine
         public int HalfMoveClock;
         public int FullMoveNumber;
         public Color SideToMove;
+        public ulong HashKey;
 
         public GameState(Board board)
         {
@@ -21,6 +22,7 @@ namespace ChessEngine
             HalfMoveClock = board.HalfMoveClock;
             FullMoveNumber = board.FullMoveNumber;
             SideToMove = board.SideToMove;
+            HashKey = board.HashKey;
         }
     }
 
@@ -69,6 +71,9 @@ namespace ChessEngine
             }
 
             SideToMove = SideToMove == Color.White ? Color.Black : Color.White;
+            
+            // Recompute hash after move
+            HashKey = ZobristHashing.ComputeHash(this);
         }
 
         public void UnmakeMove(Move move)
@@ -100,6 +105,7 @@ namespace ChessEngine
             HalfMoveClock = previousState.HalfMoveClock;
             FullMoveNumber = previousState.FullMoveNumber;
             SideToMove = previousState.SideToMove;
+            HashKey = previousState.HashKey;
         }
 
         private void HandleCastling(Move move)
