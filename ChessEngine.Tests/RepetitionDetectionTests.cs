@@ -131,7 +131,7 @@ namespace ChessEngine.Tests
         }
 
         [Fact]
-        public void IsGameOver_WithRepetition_ReturnsTrue()
+        public void IsGameOver_WithRepetition_ReturnsFalse()
         {
             var board = new Board();
             board.SetupStartingPosition();
@@ -154,7 +154,9 @@ namespace ChessEngine.Tests
             board.MakeMove(move3);
             board.MakeMove(move4);
             
-            Assert.True(board.IsGameOver());
+            // IsGameOver() no longer includes repetition detection (only used in search)
+            Assert.True(board.IsRepetition());
+            Assert.False(board.IsGameOver());
         }
     }
 }

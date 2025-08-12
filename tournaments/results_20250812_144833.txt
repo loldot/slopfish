@@ -1,0 +1,725 @@
+Indexing opening suite...
+Started game 1 of 100 (Baseline vs Candidate)
+Started game 2 of 100 (Candidate vs Baseline)
+Finished game 2 (Candidate vs Baseline): 1-0 {White mates}
+Started game 3 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 1 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 4 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 3 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 5 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 4 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 6 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 6 (Candidate vs Baseline): 1-0 {White mates}
+Started game 7 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 5 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 8 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 8 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 9 of 100 (Baseline vs Candidate)
+Finished game 7 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 10 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 9 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 11 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 10 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 12 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 11 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 13 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 12 (Candidate vs Baseline): 1-0 {White mates}
+Started game 14 of 100 (Candidate vs Baseline)
+Finished game 14 (Candidate vs Baseline): 1-0 {White mates}
+Started game 15 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 13 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 16 of 100 (Candidate vs Baseline)
+Finished game 16 (Candidate vs Baseline): 1-0 {White mates}
+Started game 17 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 17 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 18 of 100 (Candidate vs Baseline)
+Finished game 15 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 19 of 100 (Baseline vs Candidate)
+Finished game 18 (Candidate vs Baseline): 1-0 {White mates}
+Started game 20 of 100 (Candidate vs Baseline)
+Finished game 20 (Candidate vs Baseline): 1-0 {White mates}
+Started game 21 of 100 (Baseline vs Candidate)
+Finished game 19 (Baseline vs Candidate): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -147.19 +/- 99.87, nElo: -262.64 +/- 152.27
+LOS: 0.04 %, DrawRatio: 10.00 %, PairsRatio: 0.12
+Games: 20, Wins: 1, Losses: 9, Draws: 10, Points: 6.0 (30.00 %)
+Ptnml(0-2): [1, 7, 1, 1, 0], WL/DD Ratio: 0.00
+--------------------------------------------------
+Started game 22 of 100 (Candidate vs Baseline)
+Finished game 21 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 23 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 22 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 24 of 100 (Candidate vs Baseline)
+Finished game 23 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 25 of 100 (Baseline vs Candidate)
+Finished game 25 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 26 of 100 (Candidate vs Baseline)
+Finished game 24 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 27 of 100 (Baseline vs Candidate)
+Finished game 26 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 28 of 100 (Candidate vs Baseline)
+Finished game 27 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 29 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 28 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 30 of 100 (Candidate vs Baseline)
+Finished game 29 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 31 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 31 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 32 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 30 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 33 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 33 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 34 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 34 (Candidate vs Baseline): 1-0 {White mates}
+Started game 35 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 32 (Candidate vs Baseline): 1/2-1/2 {Draw by fifty moves rule}
+Started game 36 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 35 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 37 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 36 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 38 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 37 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 39 of 100 (Baseline vs Candidate)
+Finished game 38 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 40 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 40 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 41 of 100 (Baseline vs Candidate)
+Finished game 39 (Baseline vs Candidate): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -70.44 +/- 73.91, nElo: -107.22 +/- 107.67
+LOS: 2.55 %, DrawRatio: 30.00 %, PairsRatio: 0.40
+Games: 40, Wins: 9, Losses: 17, Draws: 14, Points: 16.0 (40.00 %)
+Ptnml(0-2): [2, 8, 6, 4, 0], WL/DD Ratio: 5.00
+--------------------------------------------------
+Started game 42 of 100 (Candidate vs Baseline)
+Finished game 42 (Candidate vs Baseline): 1-0 {White mates}
+Started game 43 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 41 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 44 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 43 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 45 of 100 (Baseline vs Candidate)
+Finished game 44 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 46 of 100 (Candidate vs Baseline)
+Finished game 45 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 47 of 100 (Baseline vs Candidate)
+Finished game 46 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 48 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 47 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 49 of 100 (Baseline vs Candidate)
+Finished game 48 (Candidate vs Baseline): 1-0 {White mates}
+Started game 50 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 49 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 51 of 100 (Baseline vs Candidate)
+Finished game 50 (Candidate vs Baseline): 1-0 {White mates}
+Started game 52 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 51 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 53 of 100 (Baseline vs Candidate)
+Finished game 52 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 54 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 53 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 55 of 100 (Baseline vs Candidate)
+Finished game 54 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 56 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 56 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 57 of 100 (Baseline vs Candidate)
+Finished game 57 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 58 of 100 (Candidate vs Baseline)
+Finished game 55 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 59 of 100 (Baseline vs Candidate)
+Finished game 58 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 60 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 60 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 61 of 100 (Baseline vs Candidate)
+Finished game 59 (Baseline vs Candidate): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -70.44 +/- 52.24, nElo: -122.84 +/- 87.91
+LOS: 0.31 %, DrawRatio: 40.00 %, PairsRatio: 0.29
+Games: 60, Wins: 15, Losses: 27, Draws: 18, Points: 24.0 (40.00 %)
+Ptnml(0-2): [2, 12, 12, 4, 0], WL/DD Ratio: 11.00
+--------------------------------------------------
+Started game 62 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 62 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 63 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 61 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 64 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 63 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 65 of 100 (Baseline vs Candidate)
+Finished game 64 (Candidate vs Baseline): 1-0 {White mates}
+Started game 66 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 66 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 67 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 67 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 68 of 100 (Candidate vs Baseline)
+Finished game 65 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 69 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 68 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 70 of 100 (Candidate vs Baseline)
+Finished game 70 (Candidate vs Baseline): 1-0 {White mates}
+Started game 71 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 69 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 72 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 71 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 73 of 100 (Baseline vs Candidate)
+Finished game 72 (Candidate vs Baseline): 1-0 {White mates}
+Started game 74 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 74 (Candidate vs Baseline): 1-0 {White mates}
+Started game 75 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 73 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 76 of 100 (Candidate vs Baseline)
+Finished game 76 (Candidate vs Baseline): 1-0 {White mates}
+Started game 77 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 77 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 78 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 75 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 79 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 78 (Candidate vs Baseline): 1-0 {White mates}
+Started game 80 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 79 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 81 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 80 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -79.53 +/- 42.20, nElo: -149.41 +/- 76.13
+LOS: 0.01 %, DrawRatio: 40.00 %, PairsRatio: 0.20
+Games: 80, Wins: 17, Losses: 35, Draws: 28, Points: 31.0 (38.75 %)
+Ptnml(0-2): [2, 18, 16, 4, 0], WL/DD Ratio: 4.33
+--------------------------------------------------
+Started game 82 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 81 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 83 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 82 (Candidate vs Baseline): 1-0 {White mates}
+Started game 84 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 84 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 85 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 83 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 86 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 86 (Candidate vs Baseline): 1-0 {White mates}
+Started game 87 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 85 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 88 of 100 (Candidate vs Baseline)
+Finished game 88 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 89 of 100 (Baseline vs Candidate)
+Finished game 87 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 90 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 89 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 91 of 100 (Baseline vs Candidate)
+Finished game 90 (Candidate vs Baseline): 1-0 {White mates}
+Started game 92 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 92 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 93 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 91 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 94 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 93 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 95 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 94 (Candidate vs Baseline): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 96 of 100 (Candidate vs Baseline)
+Finished game 95 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 97 of 100 (Baseline vs Candidate)
+Finished game 96 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 98 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 97 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Started game 99 of 100 (Baseline vs Candidate)
+Finished game 98 (Candidate vs Baseline): 1-0 {White mates}
+Started game 100 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 99 (Baseline vs Candidate): 1/2-1/2 {Draw by 3-fold repetition}
+Finished game 100 (Candidate vs Baseline): 1-0 {White mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -81.37 +/- 38.51, nElo: -149.90 +/- 68.10
+LOS: 0.00 %, DrawRatio: 34.00 %, PairsRatio: 0.22
+Games: 100, Wins: 20, Losses: 43, Draws: 37, Points: 38.5 (38.50 %)
+Ptnml(0-2): [2, 25, 17, 6, 0], WL/DD Ratio: 4.67
+--------------------------------------------------
+Finished match
+Total Time: 00:15:57 (hours:minutes:seconds)
+

@@ -178,6 +178,9 @@ namespace ChessEngine
             nodesSearched++;
 
             int standPat = Evaluator.Evaluate(board);
+            // Negate evaluation if it's Black's turn (negamax)
+            if (board.SideToMove == Color.Black)
+                standPat = -standPat;
 
             if (standPat >= beta)
                 return beta;

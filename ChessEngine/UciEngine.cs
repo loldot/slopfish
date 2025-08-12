@@ -258,7 +258,9 @@ namespace ChessEngine
                 {
                     if (!result.BestMove.Equals(default(Move)))
                     {
-                        Console.WriteLine($"info depth {result.Depth} score cp {result.Score} nodes {result.NodesSearched} time {stopwatch.ElapsedMilliseconds}");
+                        // UCI scores should be from White's perspective, negamax returns from current side's perspective
+                        int uciScore = board.SideToMove == Color.White ? result.Score : -result.Score;
+                        Console.WriteLine($"info depth {result.Depth} score cp {uciScore} nodes {result.NodesSearched} time {stopwatch.ElapsedMilliseconds}");
                         Console.WriteLine($"bestmove {result.BestMove}");
                     }
                     else
@@ -309,7 +311,7 @@ namespace ChessEngine
         private void HandleEval()
         {
             int eval = Evaluator.Evaluate(board);
-            Console.WriteLine($"Evaluation: {eval} (from {board.SideToMove}'s perspective)");
+            Console.WriteLine($"Evaluation: {eval} (from White's perspective)");
         }
 
         private Move ParseMove(string moveStr)

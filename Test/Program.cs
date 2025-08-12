@@ -1,49 +1,34 @@
 using ChessEngine;
 
-Console.WriteLine("Chess Engine Test - Repetition Detection");
+Console.WriteLine("Chess Engine Test - Fixed Version");
 
 var board = new Board();
 board.SetupStartingPosition();
 
-Console.WriteLine($"Initial position hash: {board.HashKey}");
-Console.WriteLine($"Is repetition initially: {board.IsRepetition()}");
+Console.WriteLine("=== Basic Search Test ===");
+var searchEngine = new SearchEngine(board);
 
-// Make a sequence of moves that returns to starting position
-var move1 = new Move(Board.MakeSquare(Board.FileG, Board.Rank1), 
-                    Board.MakeSquare(Board.FileF, Board.Rank3), 
-                    Piece.WhiteKnight, Piece.None);
-var move2 = new Move(Board.MakeSquare(Board.FileG, Board.Rank8), 
-                    Board.MakeSquare(Board.FileF, Board.Rank6), 
-                    Piece.BlackKnight, Piece.None);
-var move3 = new Move(Board.MakeSquare(Board.FileF, Board.Rank3), 
-                    Board.MakeSquare(Board.FileG, Board.Rank1), 
-                    Piece.WhiteKnight, Piece.None);
-var move4 = new Move(Board.MakeSquare(Board.FileF, Board.Rank6), 
-                    Board.MakeSquare(Board.FileG, Board.Rank8), 
-                    Piece.BlackKnight, Piece.None);
+// Test a simple 3-ply search
+var result = searchEngine.Search(3, TimeSpan.FromSeconds(5));
+Console.WriteLine($"Best move: {result.BestMove}");
+Console.WriteLine($"Score: {result.Score}");
+Console.WriteLine($"Nodes: {result.NodesSearched}");
+Console.WriteLine($"Depth: {result.Depth}");
 
-board.MakeMove(move1);
-Console.WriteLine($"After move 1, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+// Test from Black's perspective
+board.MakeMove(result.BestMove);
+Console.WriteLine($"\nAfter White plays {result.BestMove}:");
+searchEngine = new SearchEngine(board);
+result = searchEngine.Search(3, TimeSpan.FromSeconds(5));
+Console.WriteLine($"Best Black move: {result.BestMove}");
+Console.WriteLine($"Score: {result.Score}");
 
-board.MakeMove(move2);
-Console.WriteLine($"After move 2, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+Console.WriteLine("\n=== Evaluation Test ===");
+board.SetupStartingPosition();
+Console.WriteLine($"Starting eval: {Evaluator.Evaluate(board)}");
 
-board.MakeMove(move3);
-Console.WriteLine($"After move 3, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+// Test known good position for White  
+board.LoadFromFen("rnbqkb1r/pppp1ppp/4pn2/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 4");
+Console.WriteLine($"After 1.e4 e6 2.d4 Nf6: {Evaluator.Evaluate(board)}");
 
-board.MakeMove(move4);
-Console.WriteLine($"After move 4, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
-
-// Second cycle
-board.MakeMove(move1);
-Console.WriteLine($"After move 5, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
-
-board.MakeMove(move2);
-Console.WriteLine($"After move 6, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
-
-board.MakeMove(move3);
-Console.WriteLine($"After move 7, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
-
-board.MakeMove(move4);
-Console.WriteLine($"After move 8, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
-Console.WriteLine($"Is threefold repetition: {board.IsThreefoldRepetition()}");
+Console.WriteLine("\nTest completed successfully!");

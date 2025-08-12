@@ -139,7 +139,8 @@ namespace ChessEngine
             score += EvaluateKingSafety(board);
             score += EvaluateMobility(board);
 
-            return board.SideToMove == Color.White ? score : -score;
+            // Return score from White's perspective (positive = good for White)
+            return score;
         }
 
         public static int GetPieceValue(int piece)

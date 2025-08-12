@@ -285,7 +285,8 @@ namespace ChessEngine
 
         public bool IsGameOver()
         {
-            return IsCheckmate() || IsStalemate() || HalfMoveClock >= 100 || IsRepetition();
+            // Don't include repetition in IsGameOver() - only use in search for performance
+            return IsCheckmate() || IsStalemate() || HalfMoveClock >= 100;
         }
     }
 }
