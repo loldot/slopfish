@@ -151,7 +151,7 @@ namespace ChessEngine
                 HandleStop();
             }
 
-            int depth = 6;
+            int depth = 50; // Default to max depth for iterative deepening
             int moveTime = 5000;
             int whiteTime = 0;
             int blackTime = 0;
@@ -159,6 +159,7 @@ namespace ChessEngine
             int blackInc = 0;
             int movesToGo = 0;
             bool infinite = false;
+            bool depthSpecified = false;
 
             for (int i = 1; i < parts.Length; i++)
             {
@@ -168,6 +169,7 @@ namespace ChessEngine
                         if (i + 1 < parts.Length && int.TryParse(parts[i + 1], out int d))
                         {
                             depth = d;
+                            depthSpecified = true;
                             i++;
                         }
                         break;
@@ -219,38 +221,70 @@ namespace ChessEngine
                 }
             }
 
-            if (whiteTime > 0 || blackTime > 0)
+            // Only use time management if depth is not explicitly specified
+            if (!depthSpecified && (whiteTime > 0 || blackTime > 0))
             {
                 int timeLeft = board.SideToMove == Color.White ? whiteTime : blackTime;
                 int increment = board.SideToMove == Color.White ? whiteInc : blackInc;
                 
                 if (movesToGo > 0)
                 {
+                    // Time control with moves to go
                     moveTime = (timeLeft / movesToGo) + increment;
                 }
                 else
                 {
+                    // Sudden death or increment time control
                     moveTime = (timeLeft / 30) + increment;
                 }
                 
-                moveTime = Math.Max(moveTime, 100);
-                moveTime = Math.Min(moveTime, timeLeft - 100);
+                // Safety margins
+                moveTime = Math.Max(moveTime, 100); // Minimum 100ms
+                moveTime = Math.Min(moveTime, timeLeft - 100); // Leave 100ms safety margin
             }
 
             searchCancellation = new CancellationTokenSource();
             isSearching = true;
 
-            Task.Run(() => PerformSearch(depth, moveTime, infinite), searchCancellation.Token);
+            Task.Run(() => PerformSearch(depth, moveTime, infinite, depthSpecified), searchCancellation.Token);
         }
 
-        private void PerformSearch(int depth, int moveTime, bool infinite)
+        private void PerformSearch(int depth, int moveTime, bool infinite, bool depthSpecified)
         {
             try
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
                 
-                TimeSpan maxTime = infinite ? TimeSpan.MaxValue : TimeSpan.FromMilliseconds(moveTime);
-                SearchResult result = searchEngine.Search(depth, maxTime);
+                // Subscribe to depth completion events for UCI info output
+                Action<int, int, long, long> depthHandler = (completedDepth, score, nodes, timeMs) =>
+                {
+                    if (searchCancellation?.Token.IsCancellationRequested != true)
+                    {
+                        // UCI scores should be from White's perspective
+                        int uciScore = board.SideToMove == Color.White ? score : -score;
+                        Console.WriteLine($"info depth {completedDepth} score cp {uciScore} nodes {nodes} time {timeMs}");
+                    }
+                };
+                
+                searchEngine.OnDepthCompleted += depthHandler;
+                
+                TimeSpan maxTime;
+                if (infinite)
+                {
+                    maxTime = TimeSpan.MaxValue;
+                }
+                else if (depthSpecified)
+                {
+                    // When depth is specified, use a generous time limit but respect the depth limit
+                    maxTime = TimeSpan.FromMinutes(10);
+                }
+                else
+                {
+                    // Time-based search
+                    maxTime = TimeSpan.FromMilliseconds(moveTime);
+                }
+                
+                SearchResult result = searchEngine.Search(depth, maxTime, searchCancellation?.Token ?? CancellationToken.None);
                 
                 stopwatch.Stop();
 
@@ -258,9 +292,6 @@ namespace ChessEngine
                 {
                     if (!result.BestMove.Equals(default(Move)))
                     {
-                        // UCI scores should be from White's perspective, negamax returns from current side's perspective
-                        int uciScore = board.SideToMove == Color.White ? result.Score : -result.Score;
-                        Console.WriteLine($"info depth {result.Depth} score cp {uciScore} nodes {result.NodesSearched} time {stopwatch.ElapsedMilliseconds}");
                         Console.WriteLine($"bestmove {result.BestMove}");
                     }
                     else
@@ -276,6 +307,9 @@ namespace ChessEngine
                         }
                     }
                 }
+                
+                // Unsubscribe from events
+                searchEngine.OnDepthCompleted -= depthHandler;
             }
             catch (OperationCanceledException)
             {

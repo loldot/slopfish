@@ -29,7 +29,10 @@ namespace ChessEngine
         private DateTime searchStartTime;
         private TimeSpan maxSearchTime;
         private bool shouldStop;
+        private CancellationToken cancellationToken;
         private TranspositionTable transpositionTable;
+        
+        public event Action<int, int, long, long>? OnDepthCompleted; // depth, score, nodes, timeMs
 
         public SearchEngine(Board board)
         {
@@ -37,12 +40,13 @@ namespace ChessEngine
             this.transpositionTable = new TranspositionTable(64); // 64MB TT
         }
 
-        public SearchResult Search(int maxDepth, TimeSpan maxTime)
+        public SearchResult Search(int maxDepth, TimeSpan maxTime, CancellationToken cancellationToken = default)
         {
             nodesSearched = 0;
             searchStartTime = DateTime.UtcNow;
             maxSearchTime = maxTime;
             shouldStop = false;
+            this.cancellationToken = cancellationToken;
             
             // Start new search in transposition table
             transpositionTable.NewSearch();
@@ -52,15 +56,19 @@ namespace ChessEngine
 
             for (int depth = 1; depth <= Math.Min(maxDepth, MaxDepth); depth++)
             {
-                if (shouldStop) break;
+                if (shouldStop || cancellationToken.IsCancellationRequested) break;
 
                 // Always maximize from the current player's perspective
                 int score = AlphaBeta(depth, -Infinity, Infinity, true, out Move currentBestMove);
                 
-                if (!shouldStop)
+                if (!shouldStop && !cancellationToken.IsCancellationRequested)
                 {
                     bestMove = currentBestMove;
                     bestScore = score;
+                    
+                    // Report completed depth
+                    long elapsedMs = (long)(DateTime.UtcNow - searchStartTime).TotalMilliseconds;
+                    OnDepthCompleted?.Invoke(depth, score, nodesSearched, elapsedMs);
                 }
 
                 if (Math.Abs(score) >= MateValue - MaxDepth)
@@ -85,7 +93,7 @@ namespace ChessEngine
             
             ulong positionHash = board.HashKey;
             
-            if (DateTime.UtcNow - searchStartTime >= maxSearchTime)
+            if (DateTime.UtcNow - searchStartTime >= maxSearchTime || cancellationToken.IsCancellationRequested)
             {
                 shouldStop = true;
                 return 0;
