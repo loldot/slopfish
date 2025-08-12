@@ -74,6 +74,9 @@ namespace ChessEngine
             
             // Recompute hash after move
             HashKey = ZobristHashing.ComputeHash(this);
+            
+            // Add new position to history
+            AddPositionToHistory();
         }
 
         public void UnmakeMove(Move move)
@@ -106,6 +109,9 @@ namespace ChessEngine
             FullMoveNumber = previousState.FullMoveNumber;
             SideToMove = previousState.SideToMove;
             HashKey = previousState.HashKey;
+            
+            // Remove last position from history
+            RemoveLastPositionFromHistory();
         }
 
         private void HandleCastling(Move move)
@@ -279,7 +285,7 @@ namespace ChessEngine
 
         public bool IsGameOver()
         {
-            return IsCheckmate() || IsStalemate() || HalfMoveClock >= 100;
+            return IsCheckmate() || IsStalemate() || HalfMoveClock >= 100 || IsRepetition();
         }
     }
 }

@@ -7,6 +7,7 @@ namespace ChessEngine
         public const int Rank1 = 10, Rank2 = 20, Rank3 = 30, Rank4 = 40, Rank5 = 50, Rank6 = 60, Rank7 = 70, Rank8 = 80;
 
         private readonly int[] squares = new int[BoardSize];
+        private readonly List<ulong> positionHistory = new List<ulong>();
         
         public Color SideToMove { get; set; } = Color.White;
         public int HalfMoveClock { get; set; } = 0;
@@ -130,6 +131,10 @@ namespace ChessEngine
             
             // Initialize hash key
             HashKey = ZobristHashing.ComputeHash(this);
+            
+            // Add starting position to history
+            positionHistory.Clear();
+            positionHistory.Add(HashKey);
         }
 
         public void PrintBoard()
@@ -152,6 +157,63 @@ namespace ChessEngine
             Console.WriteLine($"En passant: {(EnPassantSquare == -1 ? "-" : SquareToAlgebraic(EnPassantSquare))}");
             Console.WriteLine($"Halfmove clock: {HalfMoveClock}");
             Console.WriteLine($"Fullmove number: {FullMoveNumber}");
+        }
+
+        public bool IsThreefoldRepetition()
+        {
+            if (positionHistory.Count < 2) return false;
+
+            ulong currentPosition = HashKey;
+            int repetitionCount = 1; // Count current position
+
+            // Count how many times the current position has occurred in history
+            // Skip the most recent entry since that's the position we just moved to
+            for (int i = positionHistory.Count - 2; i >= 0; i--)
+            {
+                if (positionHistory[i] == currentPosition)
+                {
+                    repetitionCount++;
+                    if (repetitionCount >= 3) // Threefold repetition
+                        return true;
+                }
+            }
+
+            return false;
+        }
+
+        public bool IsRepetition()
+        {
+            // For performance, we treat any repetition as a draw
+            if (positionHistory.Count < 2) return false;
+
+            ulong currentPosition = HashKey;
+
+            // Check if current position has occurred before in history
+            // Start from the end and go backwards, skipping the most recent entry (which is the position we just moved to)
+            for (int i = positionHistory.Count - 2; i >= 0; i--)
+            {
+                if (positionHistory[i] == currentPosition)
+                    return true;
+            }
+
+            return false;
+        }
+
+        public void AddPositionToHistory()
+        {
+            positionHistory.Add(HashKey);
+        }
+
+        public void RemoveLastPositionFromHistory()
+        {
+            if (positionHistory.Count > 0)
+                positionHistory.RemoveAt(positionHistory.Count - 1);
+        }
+
+        public void ClearPositionHistory()
+        {
+            positionHistory.Clear();
+            positionHistory.Add(HashKey);
         }
     }
 }

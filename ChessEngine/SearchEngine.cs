@@ -91,6 +91,12 @@ namespace ChessEngine
                 return 0;
             }
 
+            // Check for repetition draw
+            if (board.IsRepetition())
+            {
+                return 0; // Return draw score
+            }
+
             // Probe transposition table
             int ttScore = transpositionTable.ProbeScore(positionHash, depth, alpha, beta, board.SideToMove);
             if (ttScore != int.MinValue)

@@ -1,25 +1,49 @@
 using ChessEngine;
 
-Console.WriteLine("Chess Engine Test");
+Console.WriteLine("Chess Engine Test - Repetition Detection");
 
 var board = new Board();
 board.SetupStartingPosition();
 
-Console.WriteLine("Starting position:");
-board.PrintBoard();
+Console.WriteLine($"Initial position hash: {board.HashKey}");
+Console.WriteLine($"Is repetition initially: {board.IsRepetition()}");
 
-var legalMoves = board.GenerateLegalMoves();
-Console.WriteLine($"Legal moves: {legalMoves.Count}");
+// Make a sequence of moves that returns to starting position
+var move1 = new Move(Board.MakeSquare(Board.FileG, Board.Rank1), 
+                    Board.MakeSquare(Board.FileF, Board.Rank3), 
+                    Piece.WhiteKnight, Piece.None);
+var move2 = new Move(Board.MakeSquare(Board.FileG, Board.Rank8), 
+                    Board.MakeSquare(Board.FileF, Board.Rank6), 
+                    Piece.BlackKnight, Piece.None);
+var move3 = new Move(Board.MakeSquare(Board.FileF, Board.Rank3), 
+                    Board.MakeSquare(Board.FileG, Board.Rank1), 
+                    Piece.WhiteKnight, Piece.None);
+var move4 = new Move(Board.MakeSquare(Board.FileF, Board.Rank6), 
+                    Board.MakeSquare(Board.FileG, Board.Rank8), 
+                    Piece.BlackKnight, Piece.None);
 
-foreach (var move in legalMoves.Take(5))
-{
-    Console.WriteLine($"Move: {move}");
-}
+board.MakeMove(move1);
+Console.WriteLine($"After move 1, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
 
-var searchEngine = new SearchEngine(board);
-Console.WriteLine("Searching for best move...");
+board.MakeMove(move2);
+Console.WriteLine($"After move 2, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
 
-var bestMove = searchEngine.GetBestMove(3, 1000);
-Console.WriteLine($"Best move: {bestMove}");
+board.MakeMove(move3);
+Console.WriteLine($"After move 3, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
 
-Console.WriteLine("Test completed successfully!");
+board.MakeMove(move4);
+Console.WriteLine($"After move 4, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+
+// Second cycle
+board.MakeMove(move1);
+Console.WriteLine($"After move 5, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+
+board.MakeMove(move2);
+Console.WriteLine($"After move 6, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+
+board.MakeMove(move3);
+Console.WriteLine($"After move 7, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+
+board.MakeMove(move4);
+Console.WriteLine($"After move 8, hash: {board.HashKey}, Is repetition: {board.IsRepetition()}");
+Console.WriteLine($"Is threefold repetition: {board.IsThreefoldRepetition()}");
