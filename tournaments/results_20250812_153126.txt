@@ -1,0 +1,342 @@
+Indexing opening suite...
+Started game 1 of 100 (Baseline vs Candidate)
+Started game 2 of 100 (Candidate vs Baseline)
+Started game 3 of 100 (Baseline vs Candidate)
+Started game 4 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 2 (Candidate vs Baseline): 1-0 {White mates}
+Started game 5 of 100 (Baseline vs Candidate)
+Finished game 3 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 6 of 100 (Candidate vs Baseline)
+Finished game 4 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 7 of 100 (Baseline vs Candidate)
+Finished game 1 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 8 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 6 (Candidate vs Baseline): 1-0 {White mates}
+Started game 9 of 100 (Baseline vs Candidate)
+Finished game 8 (Candidate vs Baseline): 1-0 {White mates}
+Started game 10 of 100 (Candidate vs Baseline)
+Finished game 5 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 11 of 100 (Baseline vs Candidate)
+Finished game 9 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 12 of 100 (Candidate vs Baseline)
+Finished game 10 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 13 of 100 (Baseline vs Candidate)
+Finished game 12 (Candidate vs Baseline): 1-0 {White mates}
+Started game 14 of 100 (Candidate vs Baseline)
+Finished game 11 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 15 of 100 (Baseline vs Candidate)
+Finished game 13 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 16 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 14 (Candidate vs Baseline): 1-0 {White mates}
+Started game 17 of 100 (Baseline vs Candidate)
+Finished game 16 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 18 of 100 (Candidate vs Baseline)
+Finished game 15 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 19 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 18 (Candidate vs Baseline): 1-0 {White mates}
+Started game 20 of 100 (Candidate vs Baseline)
+Finished game 20 (Candidate vs Baseline): 1-0 {White mates}
+Started game 21 of 100 (Baseline vs Candidate)
+Finished game 7 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 22 of 100 (Candidate vs Baseline)
+Finished game 22 (Candidate vs Baseline): 1-0 {White mates}
+Started game 23 of 100 (Baseline vs Candidate)
+Finished game 19 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -190.85 +/- 134.57, nElo: -300.89 +/- 160.50
+LOS: 0.01 %, DrawRatio: 33.33 %, PairsRatio: 0.00
+Games: 18, Wins: 3, Losses: 12, Draws: 3, Points: 4.5 (25.00 %)
+Ptnml(0-2): [3, 3, 3, 0, 0], WL/DD Ratio: inf
+--------------------------------------------------
+Started game 24 of 100 (Candidate vs Baseline)
+Finished game 24 (Candidate vs Baseline): 1-0 {White mates}
+Started game 25 of 100 (Baseline vs Candidate)
+Finished game 17 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 26 of 100 (Candidate vs Baseline)
+Finished game 25 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 27 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 23 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 28 of 100 (Candidate vs Baseline)
+Finished game 21 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 29 of 100 (Baseline vs Candidate)
+Finished game 28 (Candidate vs Baseline): 1-0 {White mates}
+Started game 30 of 100 (Candidate vs Baseline)
+Finished game 30 (Candidate vs Baseline): 1-0 {White mates}
+Started game 31 of 100 (Baseline vs Candidate)
+Finished game 26 (Candidate vs Baseline): 1-0 {White mates}
+Started game 32 of 100 (Candidate vs Baseline)
+Finished game 29 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 33 of 100 (Baseline vs Candidate)
+Finished game 32 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 34 of 100 (Candidate vs Baseline)
+Finished game 31 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 35 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 34 (Candidate vs Baseline): 1-0 {White mates}
+Started game 36 of 100 (Candidate vs Baseline)
+Finished game 35 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 37 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 36 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 38 of 100 (Candidate vs Baseline)
+Finished game 27 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 39 of 100 (Baseline vs Candidate)
+Finished game 38 (Candidate vs Baseline): 1-0 {White mates}
+Started game 40 of 100 (Candidate vs Baseline)
+Finished game 40 (Candidate vs Baseline): 1-0 {White mates}
+Started game 41 of 100 (Baseline vs Candidate)
+Finished game 33 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 42 of 100 (Candidate vs Baseline)
+Finished game 39 (Baseline vs Candidate): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -203.26 +/- 85.03, nElo: -340.69 +/- 110.47
+LOS: 0.00 %, DrawRatio: 26.32 %, PairsRatio: 0.00
+Games: 38, Wins: 5, Losses: 25, Draws: 8, Points: 9.0 (23.68 %)
+Ptnml(0-2): [6, 8, 5, 0, 0], WL/DD Ratio: inf
+--------------------------------------------------
+Started game 43 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 42 (Candidate vs Baseline): 1-0 {White mates}
+Started game 44 of 100 (Candidate vs Baseline)
+Finished game 44 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 45 of 100 (Baseline vs Candidate)
+Finished game 41 (Baseline vs Candidate): 1/2-1/2 {Draw by stalemate}
+Started game 46 of 100 (Candidate vs Baseline)
+Finished game 37 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 47 of 100 (Baseline vs Candidate)
+Finished game 43 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 48 of 100 (Candidate vs Baseline)
+Finished game 48 (Candidate vs Baseline): 1-0 {White mates}
+Started game 49 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 45 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 50 of 100 (Candidate vs Baseline)
+Finished game 46 (Candidate vs Baseline): 1-0 {White mates}
+Started game 51 of 100 (Baseline vs Candidate)
+Finished game 47 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 52 of 100 (Candidate vs Baseline)
+Finished game 49 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 53 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 50 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 54 of 100 (Candidate vs Baseline)
+Finished game 52 (Candidate vs Baseline): 1-0 {White mates}
+Started game 55 of 100 (Baseline vs Candidate)
+Finished game 53 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 56 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 54 (Candidate vs Baseline): 1-0 {White mates}
+Started game 57 of 100 (Baseline vs Candidate)
+Finished game 56 (Candidate vs Baseline): 1/2-1/2 {Draw by insufficient mating material}
+Started game 58 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 55 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 59 of 100 (Baseline vs Candidate)
+Finished game 58 (Candidate vs Baseline): 1-0 {White mates}
+Started game 60 of 100 (Candidate vs Baseline)
+Finished game 51 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 61 of 100 (Baseline vs Candidate)
+Finished game 57 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 62 of 100 (Candidate vs Baseline)
+Finished game 60 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 63 of 100 (Baseline vs Candidate)
+Finished game 59 (Baseline vs Candidate): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -183.21 +/- 69.35, nElo: -284.07 +/- 87.91
+LOS: 0.00 %, DrawRatio: 26.67 %, PairsRatio: 0.05
+Games: 60, Wins: 8, Losses: 37, Draws: 15, Points: 15.5 (25.83 %)
+Ptnml(0-2): [9, 12, 8, 1, 0], WL/DD Ratio: 7.00
+--------------------------------------------------
+Started game 64 of 100 (Candidate vs Baseline)
+Finished game 64 (Candidate vs Baseline): 1-0 {White mates}
+Started game 65 of 100 (Baseline vs Candidate)
+Finished game 62 (Candidate vs Baseline): 1-0 {White mates}
+Started game 66 of 100 (Candidate vs Baseline)
+Finished game 63 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 67 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 66 (Candidate vs Baseline): 1-0 {White mates}
+Started game 68 of 100 (Candidate vs Baseline)
+Finished game 67 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 69 of 100 (Baseline vs Candidate)
+Finished game 68 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 70 of 100 (Candidate vs Baseline)
+Finished game 69 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 71 of 100 (Baseline vs Candidate)
+Finished game 61 (Baseline vs Candidate): 1/2-1/2 {Draw by stalemate}
+Started game 72 of 100 (Candidate vs Baseline)
+Finished game 70 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 73 of 100 (Baseline vs Candidate)
+Finished game 72 (Candidate vs Baseline): 1-0 {White mates}
+Started game 74 of 100 (Candidate vs Baseline)
+Finished game 71 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 75 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 65 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 76 of 100 (Candidate vs Baseline)
+Finished game 74 (Candidate vs Baseline): 1-0 {White mates}
+Started game 77 of 100 (Baseline vs Candidate)
+Finished game 73 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 78 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Finished game 75 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 79 of 100 (Baseline vs Candidate)
+Finished game 76 (Candidate vs Baseline): 1-0 {White mates}
+Started game 80 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 78 (Candidate vs Baseline): 1-0 {White mates}
+Started game 81 of 100 (Baseline vs Candidate)
+Finished game 80 (Candidate vs Baseline): 1/2-1/2 {Draw by insufficient mating material}
+Started game 82 of 100 (Candidate vs Baseline)
+Finished game 82 (Candidate vs Baseline): 1-0 {White mates}
+Started game 83 of 100 (Baseline vs Candidate)
+Finished game 77 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 84 of 100 (Candidate vs Baseline)
+Finished game 84 (Candidate vs Baseline): 1-0 {White mates}
+Started game 85 of 100 (Baseline vs Candidate)
+Finished game 81 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Started game 86 of 100 (Candidate vs Baseline)
+Finished game 83 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 87 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 86 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 88 of 100 (Candidate vs Baseline)
+Finished game 85 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 89 of 100 (Baseline vs Candidate)
+Finished game 87 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+Started game 90 of 100 (Candidate vs Baseline)
+Finished game 88 (Candidate vs Baseline): 1-0 {White mates}
+Started game 91 of 100 (Baseline vs Candidate)
+Finished game 91 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 92 of 100 (Candidate vs Baseline)
+Finished game 90 (Candidate vs Baseline): 1-0 {White mates}
+Started game 93 of 100 (Baseline vs Candidate)
+Finished game 89 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 94 of 100 (Candidate vs Baseline)
+Finished game 92 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 95 of 100 (Baseline vs Candidate)
+Finished game 93 (Baseline vs Candidate): 0-1 {Black mates}
+Started game 96 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 94 (Candidate vs Baseline): 0-1 {Black mates}
+Started game 97 of 100 (Baseline vs Candidate)
+Finished game 79 (Baseline vs Candidate): 1/2-1/2 {Draw by fifty moves rule}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -176.36 +/- 55.51, nElo: -267.25 +/- 70.24
+LOS: 0.00 %, DrawRatio: 27.66 %, PairsRatio: 0.06
+Games: 94, Wins: 13, Losses: 57, Draws: 24, Points: 25.0 (26.60 %)
+Ptnml(0-2): [14, 18, 13, 2, 0], WL/DD Ratio: 5.50
+--------------------------------------------------
+Started game 98 of 100 (Candidate vs Baseline)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 96 (Candidate vs Baseline): 1-0 {White mates}
+Started game 99 of 100 (Baseline vs Candidate)
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Baseline
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Warning; Last info string with score not found from Candidate
+Finished game 98 (Candidate vs Baseline): 1-0 {White mates}
+Started game 100 of 100 (Candidate vs Baseline)
+Finished game 95 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+Finished game 99 (Baseline vs Candidate): 0-1 {Black mates}
+Finished game 100 (Candidate vs Baseline): 0-1 {Black mates}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -172.42 +/- 53.27, nElo: -264.42 +/- 68.79
+LOS: 0.00 %, DrawRatio: 28.57 %, PairsRatio: 0.06
+Games: 98, Wins: 14, Losses: 59, Draws: 25, Points: 26.5 (27.04 %)
+Ptnml(0-2): [14, 19, 14, 2, 0], WL/DD Ratio: 6.00
+--------------------------------------------------
+Finished game 97 (Baseline vs Candidate): 1/2-1/2 {Draw by insufficient mating material}
+--------------------------------------------------
+Results of Baseline vs Candidate (5+0.1, 1t, 64MB, 8moves_v3.pgn):
+Elo: -172.78 +/- 52.23, nElo: -267.56 +/- 68.10
+LOS: 0.00 %, DrawRatio: 28.00 %, PairsRatio: 0.06
+Games: 100, Wins: 14, Losses: 60, Draws: 26, Points: 27.0 (27.00 %)
+Ptnml(0-2): [14, 20, 14, 2, 0], WL/DD Ratio: 6.00
+--------------------------------------------------
+Finished match
+Total Time: 00:12:43 (hours:minutes:seconds)
+

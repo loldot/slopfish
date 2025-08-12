@@ -1,0 +1,146 @@
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "1"]
+[White "Candidate"]
+[Black "Baseline"]
+[Result "1/2-1/2"]
+
+1. c4 g6 2. g3 Bg7 3. Bg2 e5 4. Nc3 Ne7 5. d3 c6 6. e4 d6 7. Nge2 a6 8. a4 a5 9. Be3 Bg4 10. Kd2
+Nd7 11. Qb3 b6 12. f3 Be6 13. Qc2 Nc5 14. Rhe1 Kd7 15. g4 Qc7 16. b3 Rhe8 17. Bxc5 dxc5
+18. Rab1 b5 19. Ra1 b4 20. Rab1 bxc3+ 21. Qxc3 Bd5 22. Ra1 Bxc4 23. Rab1 Bxb3 24. Ra1 Ba2
+25. Rab1 Bxb1 26. Rd1 Ba2 27. Rc1 Bb1 28. Rxb1 c4 29. Ra1 cxd3 30. Rb1 dxe2 31. Ra1 e1=Q+
+32. Rxe1 c5 33. Rd1 c4 34. Rc1 g5 35. Rb1 Qb6 36. Ra1 Qb5 37. Rb1 Qxa4 38. Ra1 Qa3 39. Rb1 Qa2+
+40. Rb2 Qa1 41. Rb1 Qxb1 42. Ke2 Qa1 43. Kd2 Qb1 44. Ke2 Qa1 45. Kd2 Qb1 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "1"]
+[White "Baseline"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+
+1. c4 g6 2. g3 Bg7 3. Bg2 e5 4. Nc3 Ne7 5. d3 c6 6. e4 d6 7. Nge2 a6 8. a4 a5 9. Be3 Kd7 10. Kd2
+Kc7 11. Qc2 b6 12. Rhe1 h5 13. b3 h4 14. Rh1 Bh6 15. Bf3 Ra7 16. g4 Bxe3+ 17. Kxe3 h3 18. Rab1
+b5 19. Ra1 b4 20. Rab1 bxc3 21. Ra1 c5 22. Rab1 d5 23. Ra1 d4+ 24. Nxd4 cxd4+ 25. Ke2 g5
+26. Rab1 Ra6 27. Ra1 Rb6 28. Rab1 Rb5 29. Ra1 Rb4 30. Rab1 Rxb3 31. Ra1 Rb2 32. Rab1 Rxb1
+33. Rg1 Ra1 34. Rf1 Rb1 35. Re1 Ra1 36. Rd1 Rb1 37. Rc1 Ra1 38. Rb1 Rxb1 39. Qxb1 c2 40. Qa1
+c1=Q 41. Qb1 Qxb1 42. Kd2 Qa1 43. Kc2 Qb1+ 44. Kxb1 Kb6 45. Ka1 Kc5 46. Kb1 Kb4 47. Ka1 Ka3
+48. Kb1 Kb3 49. Ka1 Kc2 50. Ka2 Kc1 51. Ka1 Kc2 52. Ka2 Kc1 53. Ka1 Kc2 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "2"]
+[White "Baseline"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d6 5. Bg5 Nbd7 6. e3 c5 7. Nf3 Qa5 8. Bd3 cxd4 9. exd4 Bxc3+
+10. Qxc3 Qxc3+ 11. bxc3 Ke7 12. Ke2 h6 13. Be3 b6 14. Rab1 Bb7 15. Rb5 Bc6 16. Rbb1 Ne4
+17. Rb3 Rad8 18. Rg1 Nd2 19. Rf1 Nb1 20. Re1 Nd2 21. Rd1 Nb1 22. Rc1 Nd2 23. Rcb1 Nxb1 24. a3
+Nd2 25. Kd1 Nb1 26. Kc1 Nd2 27. Kd1 Nb1 28. Kc1 Nd2 29. Kd1 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "2"]
+[White "Candidate"]
+[Black "Baseline"]
+[Result "1/2-1/2"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d6 5. Bg5 Nbd7 6. e3 c5 7. Nf3 Qa5 8. Bd3 cxd4 9. exd4 Bxc3+
+10. Qxc3 Qxc3+ 11. bxc3 Ke7 12. Ke2 h6 13. Be3 b6 14. Rab1 Bb7 15. Rb5 Bc6 16. Rbb1 Ne4
+17. Rb3 Rad8 18. Rg1 Nd2 19. Rf1 Nb1 20. Re1 Nd2 21. Rd1 Nb1 22. Rc1 Nd2 23. Rcb1 Nxb1 24. a3
+Nd2 25. Kd1 Nb1 26. Kc1 Nd2 27. Kd1 Nb1 28. Kc1 Nd2 29. Kd1 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "3"]
+[White "Baseline"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be3 a6 6. Qe2 Ng4 7. O-O-O Nxe3 8. Qxe3 Bg4 9. Qg5
+Bxf3 10. gxf3 Nc6 11. d5 Nb4 12. Kb1 Bxc3 13. bxc3 h6 14. Qe3 Nxd5 15. exd5 Kd7 16. Kb2 e6
+17. Qe4 e5 18. Rc1 a5 19. Rb1 a4 20. Ra1 a3+ 21. Kb1 g5 22. Kc1 g4 23. Rb1 g3 24. Ra1 g2 25. Rb1
+g1=Q 26. Ra1 Qxf1+ 27. Kd2 Qe1+ 28. Raxe1 h5 29. Rd1 h4 30. Rc1 h3 31. Rb1 b6 32. Ra1 b5
+33. Rab1 b4 34. Ra1 b3 35. Rab1 b2 36. Ra1 b1=Q 37. Raxb1 c6 38. Ra1 c5 39. Rab1 c4 40. Ra1 Kc7
+41. Rab1 Kd7 42. Ra1 Kc7 43. Rab1 Kd7 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "3"]
+[White "Candidate"]
+[Black "Baseline"]
+[Result "1/2-1/2"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be3 a6 6. Qe2 Ng4 7. O-O-O Nxe3 8. Qxe3 Bg4 9. Qg5
+Bxf3 10. gxf3 Nc6 11. d5 Nb4 12. Kb1 Bxc3 13. bxc3 h6 14. Qe3 Nxd5 15. exd5 Kd7 16. Kb2 e6
+17. Qe4 e5 18. Rc1 a5 19. Rb1 a4 20. Ra1 a3+ 21. Kb1 g5 22. Kc1 g4 23. Rb1 g3 24. Ra1 g2 25. Rb1
+g1=Q 26. Ra1 Qxf1+ 27. Kd2 Qe1+ 28. Raxe1 h5 29. Rd1 h4 30. Rc1 h3 31. Rb1 b6 32. Ra1 b5
+33. Rab1 b4 34. Ra1 b3 35. Rab1 b2 36. Ra1 b1=Q 37. Raxb1 c6 38. Ra1 c5 39. Rab1 c4 40. Ra1 Kc7
+41. Rab1 Kd7 42. Ra1 Kc7 43. Rab1 Kd7 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "4"]
+[White "Baseline"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+
+1. e4 e6 2. d4 d5 3. Nd2 c5 4. Ngf3 Nf6 5. exd5 Nxd5 6. dxc5 Bxc5 7. Ne4 Be7 8. Bc4 Nc6 9. Ke2
+Qa5 10. Bd2 Qa4 11. b3 Qa3 12. Qc1 Qxc1 13. Rhxc1 Nc7 14. Rf1 Kd7 15. Bd3 Re8 16. Neg5 Bxg5
+17. Bxg5 f5 18. Rab1 f4 19. Ra1 Nb4 20. Rab1 Nxa2 21. Ra1 Nc1+ 22. Raxc1 e5 23. Rb1 e4 24. Ra1
+e3 25. Rab1 exf2+ 26. Kd1 a6 27. Ra1 a5 28. Rb1 a4 29. Ra1 a3 30. Rb1 a2 31. Ra1 b6 32. Rb1 a1=Q
+33. Rxa1 b5 34. Rb1 b4 35. Ra1 Nb5 36. Rb1 Na3 37. Ra1 Nb1 38. Rxb1 Kc6 39. Ra1 Kc5 40. Rb1 Kd5
+41. Ra1 Kc5 42. Rb1 Kd5 43. Ra1 Kc5 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "4"]
+[White "Candidate"]
+[Black "Baseline"]
+[Result "1/2-1/2"]
+
+1. e4 e6 2. d4 d5 3. Nd2 c5 4. Ngf3 Nf6 5. exd5 Nxd5 6. dxc5 Bxc5 7. Ne4 Be7 8. Bc4 Nc6 9. Ke2
+Qa5 10. Bd2 Qa4 11. b3 Qa3 12. Qc1 Qxc1 13. Rhxc1 Bd7 14. Rf1 Ncb4 15. Bxd5 exd5 16. Bxb4 Bxb4
+17. Ned2 O-O 18. Rab1 Ba3 19. Ra1 Bb2 20. Rab1 Ba1 21. Rxa1 d4 22. Rab1 d3+ 23. cxd3 a6
+24. Ra1 a5 25. Rab1 a4 26. Ra1 a3 27. Rab1 b6 28. Ra1 b5 29. Rab1 b4 30. Ra1 Bc6 31. Rab1 Bb5
+32. Ra1 Ba4 33. Rab1 Bxb3 34. Ra1 Bxa2 35. Rab1 Bxb1 36. Re1 Ba2 37. Rd1 Bb1 38. Rc1 Ba2
+39. Rb1 Bxb1 40. Nxb1 a2 41. Nbd2 a1=Q 42. Nb1 Qxb1 43. Kd2 Qa1 44. Kc2 Qb1+ 45. Kxb1 b3
+46. Kc1 b2+ 47. Kb1 f6 48. Kxb2 f5 49. Kb1 f4 50. Kc1 g6 51. Kb1 g5 52. Kc1 g4 53. Kb1 g3
+54. Kc1 gxf2 55. Kb1 f1=Q+ 56. Kb2 Qe1 57. Kc2 Qd1+ 58. Kxd1 h6 59. Kc1 h5 60. Kb1 h4 61. Kc1
+h3 62. Kb1 hxg2 63. Kc1 g1=Q+ 64. Kb2 Qf1 65. Kc2 Qe1 66. Kb2 Qd1 67. Kc3 Qc1+ 68. Kb3 Qb1+
+69. Kc3 Qa1+ 70. Kc2 Qb1+ 71. Kxb1 Ra7 72. Kc1 Ra6 73. Kb1 Ra5 74. Kc1 Ra4 75. Kb1 Ra3 76. Kc1
+Ra2 77. Kb1 Ra1+ 78. Kxa1 Rf7 79. Kb1 Rf6 80. Ka1 Rf5 81. Kb1 Re5 82. Ka1 Re4 83. Kb1 Re3
+84. Ka1 Re2 85. Kb1 Re1+ 86. Ka2 Rd1 87. Kb2 Rc1 88. Kxc1 Kf7 89. Kb1 Ke6 90. Ka1 Kd5 91. Kb1
+Kc5 92. Ka1 Kb4 93. Kb1 Ka3 94. Ka1 Kb3 95. Kb1 Ka3 96. Ka1 Kb3 97. Kb1 Ka3 1/2-1/2
+
+[Event "Fastchess Tournament"]
+[Site "?"]
+[Date "2025.08.12"]
+[Round "5"]
+[White "Baseline"]
+[Black "Candidate"]
+[Result "1/2-1/2"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 Qa5 9. Kf2 Kd7
+10. Re1 Re8 11. e5 Qc5 12. Rd1 dxe5 13. Na4 Qc7 14. Nc6+ Nd5 15. Nxe5+ Kd8 16. Nxf7+ Kd7
+17. Ne5+ Kd8 18. Rc1 Nc3 19. Rb1 Nxb1 20. Be2 Nd2 21. Rg1 Nb1 22. Rf1 Nd2 23. Re1 Nb1 24. Rd1+
+Nd2 25. Rc1 Nb1 26. Rxb1 a5 27. Ra1 b6 28. Rb1 b5 29. Ra1 b4 30. Rb1 b3 31. Ra1 bxa2 32. Rb1
+a1=Q 33. Rxa1 Qb6+ 34. Ke1 Qb5 35. Rb1 Qxa4 36. Ra1 Qa3 37. Rb1 Qa2 38. Ra1 Qxa1+ 39. Kd2 Qb1
+40. b3 Qa1 41. c3 Qb1 42. Ke3 Qa1 43. Bd1 Qb1 44. Bc2 Qa1 45. Bb1 Qxb1 46. g3 Qa1 47. h3 Qb1
+48. b4 Qa1 49. c4 Qb1 50. Kd2 Qa1 51. Kc2 Qb1+ 52. Kxb1 a4 53. Ka1 a3 54. Kb1 a2+ 55. Ka1 Bf6
+56. Kb2 a1=Q+ 57. Kc2 Qb1+ 58. Kxb1 Bxg5 59. Kc1 Bxf4+ 60. Kb1 Be3 61. Kb2 Bd2 62. Kb1 Bc1
+63. Kxc1 g6 64. Kb1 g5 65. Kc1 g4 66. Kb1 gxf3 67. Kc1 f2 68. Kb1 f1=Q+ 69. Kb2 Qe1 70. Kc2
+Qd1+ 71. Kxd1 h6 72. Kc1 h5 73. Kb1 h4 74. Kc1 hxg3 75. Kb1 g2 76. Kc1 g1=Q+ 77. Kb2 Qf1
+78. Kc2 Qe1 79. Kb2 Qd1 80. Kc3 Qc1+ 81. Kb3 Qb1+ 82. Kc3 Qa1+ 83. Kc2 Qb1+ 84. Kxb1 Ra7
+85. Kc1 Ra6 86. Kb1 Ra5 87. Kc1 Ra4 88. Kb1 Ra3 89. Kc1 Ra2 90. Kb1 Ra1+ 91. Kxa1 Na6 92. Kb1
+Nxb4 93. Ka1 Na2 94. Kb1 Nc1 95. Ka1 Na2 96. Kb1 Nc1 97. Ka1 Na2 1/2-1/2
+

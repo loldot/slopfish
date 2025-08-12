@@ -111,9 +111,10 @@ namespace ChessEngine
                 return Quiescence(alpha, beta, maximizingPlayer);
             }
 
-            List<Move> moves = board.GenerateLegalMoves();
+            Span<Move> moveBuffer = stackalloc Move[256];
+            int moveCount = board.GenerateLegalMoves(moveBuffer);
             
-            if (moves.Count == 0)
+            if (moveCount == 0)
             {
                 if (board.IsInCheck(board.SideToMove))
                 {
@@ -122,25 +123,21 @@ namespace ChessEngine
                 return 0;
             }
 
-            // Get hash move for move ordering
             Move hashMove = default;
             transpositionTable.ProbeMove(positionHash, out hashMove);
             
-            OrderMoves(moves, hashMove);
+            OrderMoves(moveBuffer.Slice(0, moveCount), hashMove);
 
-            // Since evaluation is from side-to-move perspective, we always want to maximize
-            // But we need to negate the score when going deeper since we switch sides
             int maxEval = -Infinity;
             Move localBestMove = default;
             int originalAlpha = alpha;
             
-            foreach (Move move in moves)
+            for (int i = 0; i < moveCount; i++)
             {
                 if (shouldStop) break;
-
+                
+                Move move = moveBuffer[i];
                 board.MakeMove(move);
-                // Negate the score since we're switching sides and the evaluation 
-                // will be from the opponent's perspective
                 int eval = -AlphaBeta(depth - 1, -beta, -alpha, true, out _);
                 board.UnmakeMove(move);
 
@@ -153,7 +150,7 @@ namespace ChessEngine
                 alpha = Math.Max(alpha, eval);
                 if (beta <= alpha)
                 {
-                    break; // Beta cutoff
+                    break;
                 }
             }
             
@@ -187,15 +184,16 @@ namespace ChessEngine
             
             alpha = Math.Max(alpha, standPat);
 
-            List<Move> captureMoves = GetCaptureMoves();
-            OrderMoves(captureMoves);
+            Span<Move> captureMoves = stackalloc Move[64];
+            int captureCount = GetCaptureMoves(captureMoves);
+            OrderMoves(captureMoves.Slice(0, captureCount));
 
-            foreach (Move move in captureMoves)
+            for (int i = 0; i < captureCount; i++)
             {
                 if (shouldStop) break;
-
+                
+                Move move = captureMoves[i];
                 board.MakeMove(move);
-                // Use negamax approach - negate score since we switch sides
                 int score = -Quiescence(-beta, -alpha, true);
                 board.UnmakeMove(move);
 
@@ -205,6 +203,27 @@ namespace ChessEngine
             }
 
             return alpha;
+        }
+
+        private int GetCaptureMoves(Span<Move> captureMoves)
+        {
+            Span<Move> allMoves = stackalloc Move[256];
+            int allMovesCount = board.GenerateLegalMoves(allMoves);
+            int captureCount = 0;
+
+            for (int i = 0; i < allMovesCount; i++)
+            {
+                Move move = allMoves[i];
+                if (move.IsCapture || move.IsPromotion)
+                {
+                    if (captureCount < captureMoves.Length)
+                    {
+                        captureMoves[captureCount++] = move;
+                    }
+                }
+            }
+
+            return captureCount;
         }
 
         private List<Move> GetCaptureMoves()
@@ -221,6 +240,28 @@ namespace ChessEngine
             }
 
             return captureMoves;
+        }
+
+        private void OrderMoves(Span<Move> moves, Move hashMove = default)
+        {
+            // Use insertion sort for stability with small move counts
+            for (int i = 1; i < moves.Length; i++)
+            {
+                Move currentMove = moves[i];
+                int currentScore = GetMoveOrderingScore(currentMove, hashMove);
+                int j = i - 1;
+                
+                while (j >= 0)
+                {
+                    int compareScore = GetMoveOrderingScore(moves[j], hashMove);
+                    if (compareScore >= currentScore) break;
+                    
+                    moves[j + 1] = moves[j];
+                    j--;
+                }
+                
+                moves[j + 1] = currentMove;
+            }
         }
 
         private void OrderMoves(List<Move> moves, Move hashMove = default)

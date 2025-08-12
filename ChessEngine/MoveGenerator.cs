@@ -10,7 +10,20 @@ namespace ChessEngine
 
         public static List<Move> GenerateAllMoves(Board board)
         {
-            List<Move> moves = new List<Move>();
+            Span<Move> moveBuffer = stackalloc Move[256];
+            int moveCount = GenerateAllMoves(board, moveBuffer);
+            
+            var moves = new List<Move>(moveCount);
+            for (int i = 0; i < moveCount; i++)
+            {
+                moves.Add(moveBuffer[i]);
+            }
+            return moves;
+        }
+
+        public static int GenerateAllMoves(Board board, Span<Move> moves)
+        {
+            int moveCount = 0;
             Color sideToMove = board.SideToMove;
 
             for (int square = 0; square < Board.BoardSize; square++)
@@ -23,49 +36,50 @@ namespace ChessEngine
                 switch (Piece.GetType(piece))
                 {
                     case PieceType.Pawn:
-                        GeneratePawnMoves(board, square, moves);
+                        moveCount += GeneratePawnMoves(board, square, moves[moveCount..]);
                         break;
                     case PieceType.Knight:
-                        GenerateKnightMoves(board, square, moves);
+                        moveCount += GenerateKnightMoves(board, square, moves[moveCount..]);
                         break;
                     case PieceType.Bishop:
-                        GenerateBishopMoves(board, square, moves);
+                        moveCount += GenerateBishopMoves(board, square, moves[moveCount..]);
                         break;
                     case PieceType.Rook:
-                        GenerateRookMoves(board, square, moves);
+                        moveCount += GenerateRookMoves(board, square, moves[moveCount..]);
                         break;
                     case PieceType.Queen:
-                        GenerateQueenMoves(board, square, moves);
+                        moveCount += GenerateQueenMoves(board, square, moves[moveCount..]);
                         break;
                     case PieceType.King:
-                        GenerateKingMoves(board, square, moves);
+                        moveCount += GenerateKingMoves(board, square, moves[moveCount..]);
                         break;
                 }
             }
 
-            GenerateCastlingMoves(board, moves);
-            return moves;
+            moveCount += GenerateCastlingMoves(board, moves[moveCount..]);
+            return moveCount;
         }
 
-        private static void GeneratePawnMoves(Board board, int square, List<Move> moves)
+        private static int GeneratePawnMoves(Board board, int square, Span<Move> moves)
         {
             int piece = board.GetPiece(square);
             Color color = Piece.GetColor(piece);
             int direction = color == Color.White ? 10 : -10;
             int startRank = color == Color.White ? Board.Rank2 : Board.Rank7;
             int promotionRank = color == Color.White ? Board.Rank8 : Board.Rank1;
+            int moveCount = 0;
 
             int oneSquareAhead = square + direction;
             if (board.IsValidSquare(oneSquareAhead) && board.GetPiece(oneSquareAhead) == Piece.None)
             {
                 if (Board.GetRank(oneSquareAhead) == promotionRank / 10)
                 {
-                    AddPromotionMoves(board, square, oneSquareAhead, moves);
+                    moveCount += AddPromotionMoves(board, square, oneSquareAhead, moves[moveCount..]);
                 }
                 else
                 {
                     bool isDoublePush = false;
-                    moves.Add(new Move(square, oneSquareAhead, piece, Piece.None, Piece.None, false, false, isDoublePush));
+                    moves[moveCount++] = new Move(square, oneSquareAhead, piece, Piece.None, Piece.None, false, false, isDoublePush);
 
                     if (Board.GetRank(square) == startRank / 10)
                     {
@@ -73,7 +87,7 @@ namespace ChessEngine
                         if (board.IsValidSquare(twoSquaresAhead) && board.GetPiece(twoSquaresAhead) == Piece.None)
                         {
                             isDoublePush = true;
-                            moves.Add(new Move(square, twoSquaresAhead, piece, Piece.None, Piece.None, false, false, isDoublePush));
+                            moves[moveCount++] = new Move(square, twoSquaresAhead, piece, Piece.None, Piece.None, false, false, isDoublePush);
                         }
                     }
                 }
@@ -90,24 +104,27 @@ namespace ChessEngine
                 {
                     if (Board.GetRank(captureSquare) == promotionRank / 10)
                     {
-                        AddPromotionMoves(board, square, captureSquare, moves, capturedPiece);
+                        moveCount += AddPromotionMoves(board, square, captureSquare, moves[moveCount..], capturedPiece);
                     }
                     else
                     {
-                        moves.Add(new Move(square, captureSquare, piece, capturedPiece));
+                        moves[moveCount++] = new Move(square, captureSquare, piece, capturedPiece);
                     }
                 }
                 else if (captureSquare == board.EnPassantSquare)
                 {
-                    moves.Add(new Move(square, captureSquare, piece, Piece.None, Piece.None, true));
+                    moves[moveCount++] = new Move(square, captureSquare, piece, Piece.None, Piece.None, true);
                 }
             }
+            
+            return moveCount;
         }
 
-        private static void AddPromotionMoves(Board board, int from, int to, List<Move> moves, int capturedPiece = Piece.None)
+        private static int AddPromotionMoves(Board board, int from, int to, Span<Move> moves, int capturedPiece = Piece.None)
         {
             int piece = board.GetPiece(from);
             Color color = Piece.GetColor(piece);
+            int moveCount = 0;
 
             int[] promotionPieces = color == Color.White
                 ? new[] { Piece.WhiteQueen, Piece.WhiteRook, Piece.WhiteBishop, Piece.WhiteKnight }
@@ -115,14 +132,17 @@ namespace ChessEngine
 
             foreach (int promotionPiece in promotionPieces)
             {
-                moves.Add(new Move(from, to, piece, capturedPiece, promotionPiece));
+                moves[moveCount++] = new Move(from, to, piece, capturedPiece, promotionPiece);
             }
+            
+            return moveCount;
         }
 
-        private static void GenerateKnightMoves(Board board, int square, List<Move> moves)
+        private static int GenerateKnightMoves(Board board, int square, Span<Move> moves)
         {
             int piece = board.GetPiece(square);
             Color color = Piece.GetColor(piece);
+            int moveCount = 0;
 
             foreach (int offset in KnightMoves)
             {
@@ -132,30 +152,33 @@ namespace ChessEngine
                 int targetPiece = board.GetPiece(targetSquare);
                 if (targetPiece == Piece.None || Piece.GetColor(targetPiece) != color)
                 {
-                    moves.Add(new Move(square, targetSquare, piece, targetPiece));
+                    moves[moveCount++] = new Move(square, targetSquare, piece, targetPiece);
                 }
             }
+            
+            return moveCount;
         }
 
-        private static void GenerateBishopMoves(Board board, int square, List<Move> moves)
+        private static int GenerateBishopMoves(Board board, int square, Span<Move> moves)
         {
-            GenerateSlidingMoves(board, square, BishopDirections, moves);
+            return GenerateSlidingMoves(board, square, BishopDirections, moves);
         }
 
-        private static void GenerateRookMoves(Board board, int square, List<Move> moves)
+        private static int GenerateRookMoves(Board board, int square, Span<Move> moves)
         {
-            GenerateSlidingMoves(board, square, RookDirections, moves);
+            return GenerateSlidingMoves(board, square, RookDirections, moves);
         }
 
-        private static void GenerateQueenMoves(Board board, int square, List<Move> moves)
+        private static int GenerateQueenMoves(Board board, int square, Span<Move> moves)
         {
-            GenerateSlidingMoves(board, square, QueenDirections, moves);
+            return GenerateSlidingMoves(board, square, QueenDirections, moves);
         }
 
-        private static void GenerateSlidingMoves(Board board, int square, int[] directions, List<Move> moves)
+        private static int GenerateSlidingMoves(Board board, int square, int[] directions, Span<Move> moves)
         {
             int piece = board.GetPiece(square);
             Color color = Piece.GetColor(piece);
+            int moveCount = 0;
 
             foreach (int direction in directions)
             {
@@ -167,24 +190,27 @@ namespace ChessEngine
 
                     if (targetPiece == Piece.None)
                     {
-                        moves.Add(new Move(square, targetSquare, piece, Piece.None));
+                        moves[moveCount++] = new Move(square, targetSquare, piece, Piece.None);
                     }
                     else
                     {
                         if (Piece.GetColor(targetPiece) != color)
                         {
-                            moves.Add(new Move(square, targetSquare, piece, targetPiece));
+                            moves[moveCount++] = new Move(square, targetSquare, piece, targetPiece);
                         }
                         break;
                     }
                 }
             }
+            
+            return moveCount;
         }
 
-        private static void GenerateKingMoves(Board board, int square, List<Move> moves)
+        private static int GenerateKingMoves(Board board, int square, Span<Move> moves)
         {
             int piece = board.GetPiece(square);
             Color color = Piece.GetColor(piece);
+            int moveCount = 0;
 
             foreach (int offset in KingMoves)
             {
@@ -194,36 +220,35 @@ namespace ChessEngine
                 int targetPiece = board.GetPiece(targetSquare);
                 if (targetPiece == Piece.None || Piece.GetColor(targetPiece) != color)
                 {
-                    moves.Add(new Move(square, targetSquare, piece, targetPiece));
+                    moves[moveCount++] = new Move(square, targetSquare, piece, targetPiece);
                 }
             }
+            
+            return moveCount;
         }
 
-        private static void GenerateCastlingMoves(Board board, List<Move> moves)
+        private static int GenerateCastlingMoves(Board board, Span<Move> moves)
         {
             Color color = board.SideToMove;
             Color enemyColor = color == Color.White ? Color.Black : Color.White;
+            int moveCount = 0;
 
-            // Cannot castle if king is in check
-            if (board.IsInCheck(color)) return;
+            if (board.IsInCheck(color)) return 0;
 
             if (color == Color.White)
             {
                 if (board.WhiteCanCastleKingside)
                 {
                     int kingSquare = Board.MakeSquare(Board.FileE, Board.Rank1);
-                    int rookSquare = Board.MakeSquare(Board.FileH, Board.Rank1);
 
-                    // Check path is clear
                     if (board.GetPiece(Board.MakeSquare(Board.FileF, Board.Rank1)) == Piece.None &&
                         board.GetPiece(Board.MakeSquare(Board.FileG, Board.Rank1)) == Piece.None)
                     {
-                        // Check king doesn't pass through or end up in check
                         if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank1), enemyColor) &&
                             !IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank1), enemyColor))
                         {
-                            moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileG, Board.Rank1),
-                                            Piece.WhiteKing, Piece.None, Piece.None, false, true));
+                            moves[moveCount++] = new Move(kingSquare, Board.MakeSquare(Board.FileG, Board.Rank1),
+                                            Piece.WhiteKing, Piece.None, Piece.None, false, true);
                         }
                     }
                 }
@@ -232,17 +257,15 @@ namespace ChessEngine
                 {
                     int kingSquare = Board.MakeSquare(Board.FileE, Board.Rank1);
 
-                    // Check path is clear
                     if (board.GetPiece(Board.MakeSquare(Board.FileD, Board.Rank1)) == Piece.None &&
                         board.GetPiece(Board.MakeSquare(Board.FileC, Board.Rank1)) == Piece.None &&
                         board.GetPiece(Board.MakeSquare(Board.FileB, Board.Rank1)) == Piece.None)
                     {
-                        // Check king doesn't pass through or end up in check (note: B1 doesn't need to be checked)
                         if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank1), enemyColor) &&
                             !IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank1), enemyColor))
                         {
-                            moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileC, Board.Rank1),
-                                            Piece.WhiteKing, Piece.None, Piece.None, false, true));
+                            moves[moveCount++] = new Move(kingSquare, Board.MakeSquare(Board.FileC, Board.Rank1),
+                                            Piece.WhiteKing, Piece.None, Piece.None, false, true);
                         }
                     }
                 }
@@ -253,39 +276,37 @@ namespace ChessEngine
                 {
                     int kingSquare = Board.MakeSquare(Board.FileE, Board.Rank8);
 
-                    // Check path is clear
                     if (board.GetPiece(Board.MakeSquare(Board.FileF, Board.Rank8)) == Piece.None &&
                         board.GetPiece(Board.MakeSquare(Board.FileG, Board.Rank8)) == Piece.None)
                     {
-                        // Check king doesn't pass through or end up in check
                         if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileF, Board.Rank8), enemyColor) &&
                             !IsSquareAttacked(board, Board.MakeSquare(Board.FileG, Board.Rank8), enemyColor))
                         {
-                            moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileG, Board.Rank8),
-                                              Piece.BlackKing, Piece.None, Piece.None, false, true));
+                            moves[moveCount++] = new Move(kingSquare, Board.MakeSquare(Board.FileG, Board.Rank8),
+                                              Piece.BlackKing, Piece.None, Piece.None, false, true);
+                        }
+                    }
+                }
+
+                if (board.BlackCanCastleQueenside)
+                {
+                    int kingSquare = Board.MakeSquare(Board.FileE, Board.Rank8);
+
+                    if (board.GetPiece(Board.MakeSquare(Board.FileD, Board.Rank8)) == Piece.None &&
+                        board.GetPiece(Board.MakeSquare(Board.FileC, Board.Rank8)) == Piece.None &&
+                        board.GetPiece(Board.MakeSquare(Board.FileB, Board.Rank8)) == Piece.None)
+                    {
+                        if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank8), enemyColor) &&
+                            !IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank8), enemyColor))
+                        {
+                            moves[moveCount++] = new Move(kingSquare, Board.MakeSquare(Board.FileC, Board.Rank8),
+                                              Piece.BlackKing, Piece.None, Piece.None, false, true);
                         }
                     }
                 }
             }
 
-            if (board.BlackCanCastleQueenside)
-            {
-                int kingSquare = Board.MakeSquare(Board.FileE, Board.Rank8);
-
-                // Check path is clear
-                if (board.GetPiece(Board.MakeSquare(Board.FileD, Board.Rank8)) == Piece.None &&
-                    board.GetPiece(Board.MakeSquare(Board.FileC, Board.Rank8)) == Piece.None &&
-                    board.GetPiece(Board.MakeSquare(Board.FileB, Board.Rank8)) == Piece.None)
-                {
-                    // Check king doesn't pass through or end up in check (note: B8 doesn't need to be checked)
-                    if (!IsSquareAttacked(board, Board.MakeSquare(Board.FileD, Board.Rank8), enemyColor) &&
-                        !IsSquareAttacked(board, Board.MakeSquare(Board.FileC, Board.Rank8), enemyColor))
-                    {
-                        moves.Add(new Move(kingSquare, Board.MakeSquare(Board.FileC, Board.Rank8),
-                                          Piece.BlackKing, Piece.None, Piece.None, false, true));
-                    }
-                }
-            }
+            return moveCount;
 
         }
 

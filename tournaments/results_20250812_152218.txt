@@ -1,0 +1,5 @@
+Indexing opening suite...
+Started game 1 of 100 (Baseline vs Candidate)
+Started game 2 of 100 (Candidate vs Baseline)
+Finished game 2 (Candidate vs Baseline): 1-0 {White mates}
+Started game 3 of 100 (Baseline vs Candidate)

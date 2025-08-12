@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "tournaments/tournament_20250812_144833.pgn",
+        "file": "tournaments/tournament_20250812_153126.pgn",
         "notation": 0,
         "track_nodes": false,
         "track_seldepth": false,
@@ -57,7 +57,7 @@
     },
     "config_name": "config.json",
     "output": 0,
-    "seed": 6170979444418852392,
+    "seed": 5841208427149927259,
     "variant": 0,
     "type": 0,
     "gauntlet_seeds": 1,
@@ -67,7 +67,7 @@
     "autosaveinterval": 20,
     "games": 2,
     "rounds": 50,
-    "concurrency": 2,
+    "concurrency": 4,
     "force_concurrency": false,
     "recover": false,
     "noswap": false,
@@ -126,26 +126,26 @@
     ],
     "stats": {
         "Candidate vs Baseline": {
-            "wins": 25,
-            "losses": 14,
-            "draws": 23,
-            "penta_WW": 1,
-            "penta_WD": 14,
+            "wins": 20,
+            "losses": 9,
+            "draws": 1,
+            "penta_WW": 5,
+            "penta_WD": 1,
             "penta_WL": 9,
-            "penta_DD": 2,
-            "penta_LD": 5,
+            "penta_DD": 0,
+            "penta_LD": 0,
             "penta_LL": 0
         },
         "Baseline vs Candidate": {
-            "wins": 6,
-            "losses": 18,
-            "draws": 14,
+            "wins": 5,
+            "losses": 40,
+            "draws": 25,
             "penta_WW": 0,
-            "penta_WD": 1,
-            "penta_WL": 5,
-            "penta_DD": 1,
-            "penta_LD": 11,
-            "penta_LL": 1
+            "penta_WD": 2,
+            "penta_WL": 3,
+            "penta_DD": 2,
+            "penta_LD": 19,
+            "penta_LL": 9
         }
     }
 }

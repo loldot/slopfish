@@ -257,11 +257,14 @@ namespace ChessEngine
 
         public List<Move> GenerateLegalMoves()
         {
-            List<Move> pseudoLegalMoves = MoveGenerator.GenerateAllMoves(this);
-            List<Move> legalMoves = new List<Move>();
+            Span<Move> pseudoLegalMoves = stackalloc Move[256];
+            int pseudoLegalCount = MoveGenerator.GenerateAllMoves(this, pseudoLegalMoves);
+            
+            var legalMoves = new List<Move>(pseudoLegalCount);
 
-            foreach (Move move in pseudoLegalMoves)
+            for (int i = 0; i < pseudoLegalCount; i++)
             {
+                Move move = pseudoLegalMoves[i];
                 if (IsLegalMove(move))
                 {
                     legalMoves.Add(move);
@@ -269,6 +272,27 @@ namespace ChessEngine
             }
 
             return legalMoves;
+        }
+
+        public int GenerateLegalMoves(Span<Move> legalMoves)
+        {
+            Span<Move> pseudoLegalMoves = stackalloc Move[256];
+            int pseudoLegalCount = MoveGenerator.GenerateAllMoves(this, pseudoLegalMoves);
+            
+            int legalCount = 0;
+            for (int i = 0; i < pseudoLegalCount; i++)
+            {
+                Move move = pseudoLegalMoves[i];
+                if (IsLegalMove(move))
+                {
+                    if (legalCount < legalMoves.Length)
+                    {
+                        legalMoves[legalCount++] = move;
+                    }
+                }
+            }
+
+            return legalCount;
         }
 
         public bool IsCheckmate()
